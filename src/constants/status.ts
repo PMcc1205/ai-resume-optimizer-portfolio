@@ -1,0 +1,11 @@
+export const MATCH_STATUS = { MET: '满足', PARTIALLY_MET: '部分满足', NOT_MET: '未满足', TO_CONFIRM: '待确认' } as const
+export const GAP_TYPE = { NONE: '无缺口', EXPRESSION: '表达缺口', FACT: '事实缺口', CAPABILITY: '能力缺口' } as const
+export const CAPABILITY_GAP_SUBTYPE = { MISSING: '能力缺失', INSUFFICIENT: '能力程度不足' } as const
+export const FACT_STATUS = { CONFIRMED: '已确认', TO_CONFIRM: '待确认', NOT_EXIST: '明确不存在', INSUFFICIENT: '信息不足', DELETED: '已删除' } as const
+export const VALIDATION_STATUS = { PASSED: '校验通过', TO_CONFIRM: '待确认', FAILED: '校验不通过' } as const
+export const REQUIREMENT_IMPORTANCE = { CORE: '核心要求', GENERAL: '一般要求', BONUS: '加分项' } as const
+export const REQUIREMENT_CATEGORY = { RESPONSIBILITY: '岗位职责', PRODUCT: '产品能力', AI_TECH: 'AI 技术能力', PROFESSIONAL: '专业技能', GENERAL: '通用能力', BACKGROUND: '背景要求', BONUS: '加分项' } as const
+export const REQUIREMENT_LEVEL = { AWARENESS: 'L1 了解', FAMILIARITY: 'L2 熟悉', PRACTICE: 'L3 实践', LEAD_OR_DESIGN: 'L4 设计 / 主导' } as const
+export type RequirementLevel = typeof REQUIREMENT_LEVEL[keyof typeof REQUIREMENT_LEVEL]
+export const RISK_LEVEL = { LOW: '低', MEDIUM: '中', HIGH: '高' } as const
+export const PRIORITY = { HIGH: '高', MEDIUM: '中', LOW: '低' } as const

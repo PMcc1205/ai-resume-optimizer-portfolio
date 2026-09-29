@@ -1,0 +1,988 @@
+{
+  "evaluationId": "formal-eval-v1",
+  "datasetVersion": "automatic-evaluation-v1",
+  "generatedAt": "2026-09-20T05:03:13.454Z",
+  "totalCases": 61,
+  "executedCases": 2,
+  "passCases": 2,
+  "failCases": 0,
+  "errorCases": 59,
+  "executionSuccessRate": 0.03278688524590164,
+  "casePassRate": 1,
+  "rawPassRate": 0.03278688524590164,
+  "pendingHumanReview": 1,
+  "categories": {
+    "normal-clean": {
+      "total": 12,
+      "pass": 0,
+      "fail": 0,
+      "error": 12,
+      "passRate": null,
+      "falsePositiveCount": 0,
+      "falsePositiveRate": null
+    },
+    "single-risk": {
+      "total": 17,
+      "pass": 1,
+      "fail": 0,
+      "error": 16,
+      "passRate": 1
+    },
+    "multi-risk": {
+      "total": 7,
+      "pass": 0,
+      "fail": 0,
+      "error": 7,
+      "passRate": null
+    },
+    "boundary": {
+      "total": 16,
+      "pass": 0,
+      "fail": 0,
+      "error": 16,
+      "passRate": null
+    },
+    "adversarial": {
+      "total": 9,
+      "pass": 1,
+      "fail": 0,
+      "error": 8,
+      "passRate": 1
+    }
+  },
+  "clean": {
+    "total": 12,
+    "pass": 0,
+    "fail": 0,
+    "error": 12,
+    "passRate": null,
+    "falsePositiveCount": 0,
+    "falsePositiveRate": null
+  },
+  "singleRisk": {
+    "total": 17,
+    "pass": 1,
+    "fail": 0,
+    "error": 16,
+    "passRate": 1,
+    "byViolationType": {
+      "unsupported_claim": {
+        "goldCount": 2,
+        "correctIdentificationCount": 0,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 2
+      },
+      "unsupported_number": {
+        "goldCount": 2,
+        "correctIdentificationCount": 0,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 2
+      },
+      "unsupported_result": {
+        "goldCount": 2,
+        "correctIdentificationCount": 0,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 2
+      },
+      "unsupported_technology": {
+        "goldCount": 2,
+        "correctIdentificationCount": 0,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 2
+      },
+      "unsupported_experiment": {
+        "goldCount": 2,
+        "correctIdentificationCount": 0,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 2
+      },
+      "numeric_value_changed": {
+        "goldCount": 1,
+        "correctIdentificationCount": 0,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 1
+      },
+      "numeric_metric_changed": {
+        "goldCount": 1,
+        "correctIdentificationCount": 0,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 1
+      },
+      "project_status_upgrade": {
+        "goldCount": 1,
+        "correctIdentificationCount": 0,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 1
+      },
+      "responsibility_upgrade": {
+        "goldCount": 1,
+        "correctIdentificationCount": 0,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 1
+      },
+      "capability_overstatement": {
+        "goldCount": 1,
+        "correctIdentificationCount": 0,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 1
+      },
+      "cross_project_fact": {
+        "goldCount": 1,
+        "correctIdentificationCount": 0,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 1
+      },
+      "rewrite_not_allowed": {
+        "goldCount": 1,
+        "correctIdentificationCount": 1,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 0
+      }
+    }
+  },
+  "multiRisk": {
+    "total": 7,
+    "pass": 0,
+    "fail": 0,
+    "error": 7,
+    "passRate": null,
+    "exactMatchCount": 0,
+    "partialMatchCount": 0,
+    "completeMissCount": 0,
+    "errorCount": 7,
+    "cases": [
+      {
+        "testCaseId": "DEV-MLT-001",
+        "status": "ERROR",
+        "matchStatus": "ERROR",
+        "expectedViolationTypes": [
+          "numeric_value_changed",
+          "responsibility_upgrade"
+        ],
+        "actualViolationTypes": [],
+        "missingTypes": [
+          "numeric_value_changed",
+          "responsibility_upgrade"
+        ],
+        "extraTypes": []
+      },
+      {
+        "testCaseId": "DEV-MLT-002",
+        "status": "ERROR",
+        "matchStatus": "ERROR",
+        "expectedViolationTypes": [
+          "project_status_upgrade",
+          "unsupported_claim"
+        ],
+        "actualViolationTypes": [],
+        "missingTypes": [
+          "project_status_upgrade",
+          "unsupported_claim"
+        ],
+        "extraTypes": []
+      },
+      {
+        "testCaseId": "DEV-MLT-003",
+        "status": "ERROR",
+        "matchStatus": "ERROR",
+        "expectedViolationTypes": [
+          "unsupported_result",
+          "unsupported_technology"
+        ],
+        "actualViolationTypes": [],
+        "missingTypes": [
+          "unsupported_result",
+          "unsupported_technology"
+        ],
+        "extraTypes": []
+      },
+      {
+        "testCaseId": "DEV-MLT-004",
+        "status": "ERROR",
+        "matchStatus": "ERROR",
+        "expectedViolationTypes": [
+          "cross_project_fact",
+          "responsibility_upgrade"
+        ],
+        "actualViolationTypes": [],
+        "missingTypes": [
+          "cross_project_fact",
+          "responsibility_upgrade"
+        ],
+        "extraTypes": []
+      },
+      {
+        "testCaseId": "DEV-MLT-005",
+        "status": "ERROR",
+        "matchStatus": "ERROR",
+        "expectedViolationTypes": [
+          "numeric_value_changed",
+          "unsupported_number",
+          "unsupported_result"
+        ],
+        "actualViolationTypes": [],
+        "missingTypes": [
+          "numeric_value_changed",
+          "unsupported_number",
+          "unsupported_result"
+        ],
+        "extraTypes": []
+      },
+      {
+        "testCaseId": "DEV-MLT-007",
+        "status": "ERROR",
+        "matchStatus": "ERROR",
+        "expectedViolationTypes": [
+          "project_status_upgrade",
+          "responsibility_upgrade",
+          "unsupported_number"
+        ],
+        "actualViolationTypes": [],
+        "missingTypes": [
+          "project_status_upgrade",
+          "responsibility_upgrade",
+          "unsupported_number"
+        ],
+        "extraTypes": []
+      },
+      {
+        "testCaseId": "DEV-MLT-008",
+        "status": "ERROR",
+        "matchStatus": "ERROR",
+        "expectedViolationTypes": [
+          "cross_project_fact",
+          "unsupported_result",
+          "unsupported_technology"
+        ],
+        "actualViolationTypes": [],
+        "missingTypes": [
+          "cross_project_fact",
+          "unsupported_result",
+          "unsupported_technology"
+        ],
+        "extraTypes": []
+      }
+    ]
+  },
+  "boundary": {
+    "total": 16,
+    "pass": 0,
+    "fail": 0,
+    "error": 16,
+    "passRate": null
+  },
+  "adversarial": {
+    "total": 9,
+    "pass": 1,
+    "fail": 0,
+    "error": 8,
+    "passRate": 1
+  },
+  "violationTypeMetrics": {
+    "rewrite_not_allowed": {
+      "goldCount": 2,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1
+    }
+  },
+  "failures": [],
+  "executionErrors": [
+    {
+      "testCaseId": "DEV-CLN-001",
+      "category": "normal-clean",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-CLN-002",
+      "category": "normal-clean",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-CLN-003",
+      "category": "normal-clean",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-CLN-004",
+      "category": "normal-clean",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-CLN-005",
+      "category": "normal-clean",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-CLN-006",
+      "category": "normal-clean",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-CLN-008",
+      "category": "normal-clean",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-CLN-009",
+      "category": "normal-clean",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-CLN-010",
+      "category": "normal-clean",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-CLN-011",
+      "category": "normal-clean",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-CLN-012",
+      "category": "normal-clean",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-CLN-014",
+      "category": "normal-clean",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-SNG-001",
+      "category": "single-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-SNG-002",
+      "category": "single-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-SNG-003",
+      "category": "single-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-SNG-004",
+      "category": "single-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-SNG-005",
+      "category": "single-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-SNG-006",
+      "category": "single-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-SNG-007",
+      "category": "single-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-SNG-008",
+      "category": "single-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-SNG-009",
+      "category": "single-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-SNG-010",
+      "category": "single-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-SNG-011",
+      "category": "single-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-SNG-012",
+      "category": "single-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-SNG-013",
+      "category": "single-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-SNG-014",
+      "category": "single-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-SNG-016",
+      "category": "single-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-SNG-017",
+      "category": "single-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-MLT-001",
+      "category": "multi-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-MLT-002",
+      "category": "multi-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-MLT-003",
+      "category": "multi-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-MLT-004",
+      "category": "multi-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-MLT-005",
+      "category": "multi-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-MLT-007",
+      "category": "multi-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-MLT-008",
+      "category": "multi-risk",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-BDR-001",
+      "category": "boundary",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-BDR-002",
+      "category": "boundary",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-BDR-003",
+      "category": "boundary",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-BDR-004",
+      "category": "boundary",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-BDR-005",
+      "category": "boundary",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-BDR-006",
+      "category": "boundary",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-BDR-007",
+      "category": "boundary",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-BDR-008",
+      "category": "boundary",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-BDR-009",
+      "category": "boundary",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-BDR-010",
+      "category": "boundary",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-BDR-011",
+      "category": "boundary",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-BDR-012",
+      "category": "boundary",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-BDR-013",
+      "category": "boundary",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-BDR-014",
+      "category": "boundary",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-BDR-015",
+      "category": "boundary",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-BDR-016",
+      "category": "boundary",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-ADV-001",
+      "category": "adversarial",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-ADV-002",
+      "category": "adversarial",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-ADV-003",
+      "category": "adversarial",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-ADV-004",
+      "category": "adversarial",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-ADV-005",
+      "category": "adversarial",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-ADV-006",
+      "category": "adversarial",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-ADV-007",
+      "category": "adversarial",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    },
+    {
+      "testCaseId": "DEV-ADV-008",
+      "category": "adversarial",
+      "errorCode": "MODEL_CALL_FAILED",
+      "errorType": "MODEL_CALL_FAILED",
+      "attempts": 2,
+      "retried": true,
+      "formedJudgment": false,
+      "schemaErrors": []
+    }
+  ],
+  "failedTestCaseIds": [],
+  "executionErrorTestCaseIds": [
+    "DEV-CLN-001",
+    "DEV-CLN-002",
+    "DEV-CLN-003",
+    "DEV-CLN-004",
+    "DEV-CLN-005",
+    "DEV-CLN-006",
+    "DEV-CLN-008",
+    "DEV-CLN-009",
+    "DEV-CLN-010",
+    "DEV-CLN-011",
+    "DEV-CLN-012",
+    "DEV-CLN-014",
+    "DEV-SNG-001",
+    "DEV-SNG-002",
+    "DEV-SNG-003",
+    "DEV-SNG-004",
+    "DEV-SNG-005",
+    "DEV-SNG-006",
+    "DEV-SNG-007",
+    "DEV-SNG-008",
+    "DEV-SNG-009",
+    "DEV-SNG-010",
+    "DEV-SNG-011",
+    "DEV-SNG-012",
+    "DEV-SNG-013",
+    "DEV-SNG-014",
+    "DEV-SNG-016",
+    "DEV-SNG-017",
+    "DEV-MLT-001",
+    "DEV-MLT-002",
+    "DEV-MLT-003",
+    "DEV-MLT-004",
+    "DEV-MLT-005",
+    "DEV-MLT-007",
+    "DEV-MLT-008",
+    "DEV-BDR-001",
+    "DEV-BDR-002",
+    "DEV-BDR-003",
+    "DEV-BDR-004",
+    "DEV-BDR-005",
+    "DEV-BDR-006",
+    "DEV-BDR-007",
+    "DEV-BDR-008",
+    "DEV-BDR-009",
+    "DEV-BDR-010",
+    "DEV-BDR-011",
+    "DEV-BDR-012",
+    "DEV-BDR-013",
+    "DEV-BDR-014",
+    "DEV-BDR-015",
+    "DEV-BDR-016",
+    "DEV-ADV-001",
+    "DEV-ADV-002",
+    "DEV-ADV-003",
+    "DEV-ADV-004",
+    "DEV-ADV-005",
+    "DEV-ADV-006",
+    "DEV-ADV-007",
+    "DEV-ADV-008"
+  ],
+  "schemaInvalidCount": 0,
+  "modelRetryCaseCount": 59,
+  "totalModelRetries": 59,
+  "latency": {
+    "overall": {
+      "count": 61,
+      "averageMs": 5,
+      "p50Ms": 5,
+      "p95Ms": 7
+    },
+    "successfulCalls": {
+      "count": 2,
+      "averageMs": 1,
+      "p50Ms": 0,
+      "p95Ms": 1
+    }
+  }
+}

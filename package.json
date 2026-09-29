@@ -1,0 +1,42 @@
+{
+  "name": "ai-resume-optimizer",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --pretty false",
+    "test:jd": "node tests/jd-analysis.test.mjs",
+    "test:fact": "node tests/resume-fact-analysis.test.mjs",
+    "test:mapping": "node tests/evidence-mapping.test.mjs",
+    "test:gap": "node tests/match-gap.test.mjs",
+    "test:diagnosis": "node tests/diagnosis.test.mjs"
+    ,"test:rewrite": "node tests/rewrite.test.mjs"
+    ,"test:validation": "node tests/rewrite-validation.test.mjs"
+    ,"test:result": "node tests/result.test.mjs"
+    ,"test:evaluation-runner": "node tests/evaluation-runner.test.mjs"
+    ,"test:formal-evaluation": "node tests/formal-evaluation.test.mjs"
+    ,"eval:high-risk": "node evaluation/run-high-risk.mjs"
+    ,"eval:high-risk:v2": "node evaluation/run-high-risk-v2.mjs"
+    ,"eval:formal:v1": "node evaluation/run-formal-eval-v1.mjs"
+    ,"eval:formal:v2": "node evaluation/run-formal-eval-v2.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "tailwindcss": "3.4.17",
+    "typescript": "latest",
+    "vite": "latest"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "title": "AI 简历优化助手｜公开作品集",
+  "language": "zh-CN",
+  "project": "AI Resume Optimizer",
+  "readingOrder": [
+    "docs/作品集核心版.md",
+    "docs/项目复盘_投递版.md",
+    "docs/产品需求文档_PRD.md",
+    "docs/AI方案设计.md",
+    "docs/产品架构与核心流程.md",
+    "docs/产品原型设计.md",
+    "docs/AI测试集设计.md",
+    "docs/AI_Evaluation.md",
+    "docs/上线迭代数据_模拟内测.md",
+    "docs/简历项目经历与面试材料.md"
+  ],
+  "metrics": {
+    "interviews": 6,
+    "surveyResponses": 47,
+    "validSurveyResponses": 42,
+    "evaluationCases": 61,
+    "evaluationPassRateBefore": 57.38,
+    "evaluationPassRateAfter": 81.97,
+    "evaluationImprovementPoints": 24.59
+  },
+  "screenshots": [
+    "screenshots/首页_1440.png",
+    "screenshots/证据匹配_1440.png",
+    "screenshots/缺口诊断_1440.png",
+    "screenshots/事实改写_1440.png",
+    "screenshots/最终结果_1440.png"
+  ]
+}

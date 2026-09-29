@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "development-case-v2.1.schema.json",
+  "title": "V2.1 Development Evaluation Case",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["caseId", "title", "category", "sourceType", "sourceFacts", "candidateExperienceId", "candidateText", "expectedValidation", "expectedViolations", "rationale"],
+  "properties": {
+    "caseId": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "category": { "enum": ["normal-clean", "single-risk", "multi-risk", "boundary", "adversarial"] },
+    "sourceType": { "const": "synthetic-evaluation" },
+    "sourceFacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["factId", "experienceId", "text", "status"],
+        "properties": {
+          "factId": { "type": "string", "minLength": 1 },
+          "experienceId": { "type": "string", "minLength": 1 },
+          "text": { "type": "string", "minLength": 1 },
+          "status": { "enum": ["confirmed", "explicit_absence", "unconfirmed"] }
+        }
+      }
+    },
+    "candidateExperienceId": { "type": "string", "minLength": 1 },
+    "candidateText": { "type": "string", "minLength": 1 },
+    "expectedValidation": { "enum": ["pass", "fail", "not_run"] },
+    "expectedViolations": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "unsupported_claim",
+          "unsupported_number",
+          "unsupported_result",
+          "unsupported_technology",
+          "unsupported_experiment",
+          "numeric_value_changed",
+          "numeric_metric_changed",
+          "project_status_upgrade",
+          "responsibility_upgrade",
+          "responsibility_scope_expanded",
+          "capability_overstatement",
+          "cross_project_fact",
+          "rewrite_not_allowed"
+        ]
+      }
+    },
+    "rationale": { "type": "string", "minLength": 1 },
+    "boundaryPairId": { "type": "string", "minLength": 1 },
+    "boundarySide": { "enum": ["pass", "fail"] }
+  }
+}

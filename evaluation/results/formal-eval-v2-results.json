@@ -1,0 +1,4890 @@
+{
+  "evaluationId": "formal-eval-v2",
+  "datasetVersion": "automatic-evaluation-v1",
+  "generatedAt": "2026-09-20T06:17:10.839Z",
+  "completed": true,
+  "results": [
+    {
+      "testCaseId": "DEV-CLN-001",
+      "title": "参与需求梳理的纯语言润色",
+      "category": "normal-clean",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "只合并语序并替换同义表达，参与职责和事实内容均未变化，应校验通过。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "参与业务需求梳理",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确支持参与需求梳理这一行动。"
+          },
+          {
+            "claimText": "归纳业务方反馈",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 中“整理业务方反馈”与“归纳业务方反馈”语义一致，属于压缩表达。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "参与需求梳理，整理业务方反馈。",
+          "参与需求梳理，整理业务方反馈。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-CLN-001"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1263,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-CLN-002",
+      "title": "协助评审的同义改写",
+      "category": "normal-clean",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "“配合”与“协助”保持相同职责等级，行动也完全由事实支持。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "配合产品经理完成需求评审与结论记录。",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确支持协助产品经理开展需求评审并记录结论，配合与协助为同级表达，未改变事实强度。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "协助产品经理开展需求评审并记录结论。",
+          "协助产品经理开展需求评审并记录结论。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-CLN-002"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1899,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-CLN-003",
+      "title": "访谈流程的句式调整",
+      "category": "normal-clean",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "只调整两个已确认行动的顺序，没有新增方法、结果或职责。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "整理访谈问题清单",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确记载访谈后整理问题清单，支持该行动。"
+          },
+          {
+            "claimText": "参与用户访谈",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确记载参与用户访谈，支持该行动。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "参与用户访谈，访谈后整理问题清单。",
+          "参与用户访谈，访谈后整理问题清单。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-CLN-003"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1198,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-CLN-004",
+      "title": "会议记录的内容压缩",
+      "category": "normal-clean",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "只压缩原句，会议参与、讨论内容记录和待办整理均被 Fact 明确支持。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "参与项目周会",
+            "claimType": "职责",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确记载参加项目周会，参与与参加为同级表达，事实支持。"
+          },
+          {
+            "claimText": "记录讨论内容",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确记载记录会议讨论内容，事实支持。"
+          },
+          {
+            "claimText": "整理会后待办",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确记载在会后整理待办事项，事实支持。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "参加项目周会，记录会议讨论内容，并在会后整理待办事项。",
+          "参加项目周会，记录会议讨论内容，并在会后整理待办事项。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-CLN-004"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1575,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-CLN-005",
+      "title": "同项目事实的合法重组",
+      "category": "normal-clean",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "两个同项目 Fact 被合并，但“负责”只修饰需求分析，原型输出和评审跟进保持原行动。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "负责搜索模块需求分析",
+            "claimType": "职责",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确表述“负责搜索模块需求分析”，与声明一致。"
+          },
+          {
+            "claimText": "输出原型",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-002"
+            ],
+            "reason": "f-002 明确表述“输出搜索模块原型”，支持该行动。"
+          },
+          {
+            "claimText": "跟进评审",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-002"
+            ],
+            "reason": "f-002 明确表述“跟进评审”，支持该行动。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001",
+          "f-002"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "负责搜索模块需求分析。",
+          "负责搜索模块需求分析。",
+          "输出搜索模块原型并跟进评审。",
+          "输出搜索模块原型并跟进评审。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-CLN-005"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1091,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-CLN-006",
+      "title": "访谈数字原样保留",
+      "category": "normal-clean",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "次数、口径和行动均保持一致，属于合法量化信息保留。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "开展并完成 12 次用户访谈",
+            "claimType": "数字",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确支持完成 12 次用户访谈，数字值与统计对象一致。"
+          },
+          {
+            "claimText": "沉淀访谈记录",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 中“整理访谈记录”与该行动语义一致，属于同级表达压缩。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "完成 12 次用户访谈并整理访谈记录。",
+          "完成 12 次用户访谈并整理访谈记录。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-CLN-006"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1361,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-CLN-008",
+      "title": "已确认 RAG 技术的专业化表达",
+      "category": "normal-clean",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "技术和项目阶段均来自事实，只做专业化措辞替换。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "基于 RAG 构建知识问答 Demo",
+            "claimType": "技术",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确说明使用 RAG 搭建知识问答 Demo，支持该技术与项目内容声明。"
+          },
+          {
+            "claimText": "搭建知识问答 Demo",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确支持搭建知识问答 Demo 这一行动。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "使用 RAG 搭建知识问答 Demo。",
+          "使用 RAG 搭建知识问答 Demo。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-CLN-008"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1426,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-CLN-009",
+      "title": "已确认 A/B 测试的合法表达",
+      "category": "normal-clean",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "实验方法、对象和指标均被原事实明确支持。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "参与注册页 A/B 测试",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确写明参与注册页 A/B 测试，支持该行动。"
+          },
+          {
+            "claimText": "通过对比两版注册转化率评估方案",
+            "claimType": "方法",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 写明比较两个版本的注册转化率，支持通过对比两版转化率评估方案这一表述。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "参与注册页 A/B 测试，比较两个版本的注册转化率。",
+          "参与注册页 A/B 测试，比较两个版本的注册转化率。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-CLN-009"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 861,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-CLN-010",
+      "title": "转化结果和数字合法保留",
+      "category": "normal-clean",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "结果、数字值、单位和注册转化率口径均保持一致。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "优化注册流程",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确提到优化注册流程这一行动。"
+          },
+          {
+            "claimText": "推动注册转化率由 8% 提升至 12%",
+            "claimType": "数字",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确记载注册转化率从 8% 提升至 12%，数字口径一致。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "优化注册流程后，注册转化率从 8% 提升至 12%。",
+          "优化注册流程后，注册转化率从 8% 提升至 12%。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-CLN-010"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1230,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-CLN-011",
+      "title": "科研问卷数据的合法压缩表达",
+      "category": "normal-clean",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "职责、问卷数量、有效问卷口径和两项数据处理行动均保持不变。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "负责完成 240 份有效问卷的数据清洗与变量编码",
+            "claimType": "职责",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确记载负责清洗 240 份有效问卷并完成变量编码，支持该职责表述。"
+          },
+          {
+            "claimText": "240 份有效问卷",
+            "claimType": "数字",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 的数字为 240 份，统计对象为有效问卷，与声明一致。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "负责清洗 240 份有效问卷，并完成变量编码。",
+          "负责清洗 240 份有效问卷，并完成变量编码。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-CLN-011"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1366,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-CLN-012",
+      "title": "内部测试状态合法重述",
+      "category": "normal-clean",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "只将“内部测试”改写为同义的“内测”，没有新增个人推进职责。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "产品进入内测阶段",
+            "claimType": "项目状态",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确写明产品进入内部测试阶段，与“内测阶段”语义一致。"
+          },
+          {
+            "claimText": "收集内部测试反馈",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确写明收集测试反馈，且处于内部测试阶段，支持该行动。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "产品进入内部测试阶段，收集测试反馈。",
+          "产品进入内部测试阶段，收集测试反馈。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-CLN-012"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1119,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-CLN-014",
+      "title": "用户规模与状态合法保留",
+      "category": "normal-clean",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "只展开“内测”同义词，邀请行动、用户数量和人数口径均不变。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "邀请 300 名用户参与产品内部测试",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确支持邀请 300 名用户参与产品内测，数字 300、对象用户、行动邀请均一致；内部测试与内测为同级表达，不改变事实强度。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "邀请 300 名用户参与产品内测。",
+          "邀请 300 名用户参与产品内测。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-CLN-014"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1005,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-001",
+      "title": "新增未发生的路线图制定行动",
+      "category": "single-risk",
+      "riskTags": [
+        "unsupported_claim"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "unsupported_claim"
+        ],
+        "rationale": "路线图制定是新增行动，现有事实只支持反馈整理。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "unsupported_claim"
+        ],
+        "claims": [
+          {
+            "claimText": "整理用户反馈",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确包含整理用户反馈这一行动。"
+          },
+          {
+            "claimText": "制定产品路线图",
+            "claimType": "行动",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "f-001 仅支持形成问题清单，未提及产品路线图或任何路线图制定行为。"
+          }
+        ],
+        "unsupportedClaims": [
+          "制定产品路线图"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "整理用户反馈并形成问题清单。",
+          "整理用户反馈并形成问题清单。"
+        ],
+        "reason": "事实声明没有 supporting Fact；f-001 仅支持形成问题清单，未提及产品路线图或任何路线图制定行为。",
+        "validationId": "validation-eval-DEV-SNG-001"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "unsupported_claim"
+      ],
+      "violationTypesActual": [
+        "unsupported_claim"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1185,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-002",
+      "title": "新增未发生的定价方案编写",
+      "category": "single-risk",
+      "riskTags": [
+        "unsupported_claim"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "unsupported_claim"
+        ],
+        "rationale": "评审和记录保持不变，唯一新增且无 Fact 支持的声明是编写产品定价方案。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "unsupported_claim"
+        ],
+        "claims": [
+          {
+            "claimText": "参加需求评审",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确支持参加需求评审。"
+          },
+          {
+            "claimText": "记录会议结论",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确支持记录会议结论。"
+          },
+          {
+            "claimText": "编写产品定价方案",
+            "claimType": "行动",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "当前 allowed Fact Set 中没有任何 Fact 支持编写产品定价方案。"
+          }
+        ],
+        "unsupportedClaims": [
+          "编写产品定价方案"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "参加需求评审并记录会议结论。",
+          "参加需求评审并记录会议结论。"
+        ],
+        "reason": "事实声明没有 supporting Fact；当前 allowed Fact Set 中没有任何 Fact 支持编写产品定价方案。",
+        "validationId": "validation-eval-DEV-SNG-002"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "unsupported_claim"
+      ],
+      "violationTypesActual": [
+        "unsupported_claim"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1362,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-003",
+      "title": "已有改善方向但新增效率百分比",
+      "category": "single-risk",
+      "riskTags": [
+        "unsupported_number"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "unsupported_number"
+        ],
+        "rationale": "行动和效率提升方向均已确认，唯一新增变量是无法追溯的 30%。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "unsupported_number",
+          "numeric_metric_changed"
+        ],
+        "claims": [
+          {
+            "claimText": "梳理并优化客服工单流程",
+            "claimType": "职责",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确支持梳理并优化客服工单流程这一职责与行动。"
+          },
+          {
+            "claimText": "使处理效率提升 30%",
+            "claimType": "数字",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "f-001 仅说明处理效率有所提升，未提供 30% 这一具体数字及口径，无法支持该声明。"
+          }
+        ],
+        "unsupportedClaims": [
+          "使处理效率提升 30%"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "梳理并优化客服工单流程，处理效率有所提升。",
+          "梳理并优化客服工单流程，处理效率有所提升。"
+        ],
+        "reason": "数字或口径无法追溯：30%；事实声明没有 supporting Fact；f-001 仅说明处理效率有所提升，未提供 30% 这一具体数字及口径，无法支持该声明。",
+        "validationId": "validation-eval-DEV-SNG-003"
+      },
+      "status": "FAIL",
+      "passed": false,
+      "failedChecks": [
+        "violationTypes: expected [\"unsupported_number\"], actual [\"numeric_metric_changed\",\"unsupported_number\"]"
+      ],
+      "violationTypesExpected": [
+        "unsupported_number"
+      ],
+      "violationTypesActual": [
+        "numeric_metric_changed",
+        "unsupported_number"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1331,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-004",
+      "title": "无规模事实新增用户数量",
+      "category": "single-risk",
+      "riskTags": [
+        "unsupported_number"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "unsupported_number"
+        ],
+        "rationale": "候选新增 500 名用户规模，原事实未提供任何数量。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "unsupported_number"
+        ],
+        "claims": [
+          {
+            "claimText": "组织 500 名用户参与产品试用",
+            "claimType": "数字",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "f-001 只支持“组织产品试用”这一行动，未提供任何用户规模或数量信息，无法支持“500 名用户”这一数字。"
+          },
+          {
+            "claimText": "收集反馈",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确包含“收集反馈”，与该行动一致。"
+          }
+        ],
+        "unsupportedClaims": [
+          "组织 500 名用户参与产品试用"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "组织产品试用并收集反馈。",
+          "组织产品试用并收集反馈。"
+        ],
+        "reason": "数字或口径无法追溯：500名；事实声明没有 supporting Fact；f-001 只支持“组织产品试用”这一行动，未提供任何用户规模或数量信息，无法支持“500 名用户”这一数字。",
+        "validationId": "validation-eval-DEV-SNG-004"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "unsupported_number"
+      ],
+      "violationTypesActual": [
+        "unsupported_number"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1433,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-005",
+      "title": "新增交付周期改善结果",
+      "category": "single-risk",
+      "riskTags": [
+        "unsupported_result"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "unsupported_result"
+        ],
+        "rationale": "完成文档工作不能自动推导交付周期缩短。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "unsupported_result"
+        ],
+        "claims": [
+          {
+            "claimText": "整理需求文档并维护版本记录",
+            "claimType": "职责",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确支持整理需求文档并维护版本记录这一职责。"
+          },
+          {
+            "claimText": "缩短产品交付周期",
+            "claimType": "结果",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "当前 allowed Fact Set 中没有关于交付周期或缩短结果的事实支持，f-001 仅包含文档整理与版本记录。"
+          }
+        ],
+        "unsupportedClaims": [
+          "缩短产品交付周期"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "整理需求文档并维护版本记录。",
+          "整理需求文档并维护版本记录。"
+        ],
+        "reason": "事实声明没有 supporting Fact；当前 allowed Fact Set 中没有关于交付周期或缩短结果的事实支持，f-001 仅包含文档整理与版本记录。",
+        "validationId": "validation-eval-DEV-SNG-005"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "unsupported_result"
+      ],
+      "violationTypesActual": [
+        "unsupported_result"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1229,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-006",
+      "title": "新增用户满意度改善结果",
+      "category": "single-risk",
+      "riskTags": [
+        "unsupported_result"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "unsupported_result"
+        ],
+        "rationale": "事实没有满意度测量或改善结果，不能从反馈收集推导。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "unsupported_result"
+        ],
+        "claims": [
+          {
+            "claimText": "收集用户反馈并归纳体验问题",
+            "claimType": "职责",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确支持收集用户反馈并归纳体验问题这一职责表述。"
+          },
+          {
+            "claimText": "改善用户满意度",
+            "claimType": "结果",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "usedFactIds 中的 f-001 仅支持收集反馈与归纳问题，未提供用户满意度改善或提升的结果证据。"
+          }
+        ],
+        "unsupportedClaims": [
+          "改善用户满意度"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "收集用户反馈并归纳体验问题。",
+          "收集用户反馈并归纳体验问题。"
+        ],
+        "reason": "结果性表达“满意度”没有真实 Fact 支持；事实声明没有 supporting Fact；usedFactIds 中的 f-001 仅支持收集反馈与归纳问题，未提供用户满意度改善或提升的结果证据。",
+        "validationId": "validation-eval-DEV-SNG-006"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "unsupported_result"
+      ],
+      "violationTypesActual": [
+        "unsupported_result"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1338,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-007",
+      "title": "新增向量数据库技术",
+      "category": "single-risk",
+      "riskTags": [
+        "unsupported_technology"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "unsupported_technology"
+        ],
+        "rationale": "向量数据库属于未确认的新技术，不能由关键词检索推导。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "unsupported_technology"
+        ],
+        "claims": [
+          {
+            "claimText": "使用向量数据库搭建内部知识查询工具",
+            "claimType": "技术",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "f-001 支持的技术是“关键词检索”，并非“向量数据库”，技术方案与 Fact 不一致，缺少向量数据库相关 Fact 支持。"
+          },
+          {
+            "claimText": "搭建内部知识查询工具",
+            "claimType": "职责",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确记载搭建内部知识查询工具这一职责，属同一 exp-001 项目的已确认事实。"
+          }
+        ],
+        "unsupportedClaims": [
+          "使用向量数据库搭建内部知识查询工具"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "使用关键词检索搭建内部知识查询工具。",
+          "使用关键词检索搭建内部知识查询工具。"
+        ],
+        "reason": "事实声明没有 supporting Fact；f-001 支持的技术是“关键词检索”，并非“向量数据库”，技术方案与 Fact 不一致，缺少向量数据库相关 Fact 支持。",
+        "validationId": "validation-eval-DEV-SNG-007"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "unsupported_technology"
+      ],
+      "violationTypesActual": [
+        "unsupported_technology"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1428,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-008",
+      "title": "新增 LangChain 框架经验",
+      "category": "single-risk",
+      "riskTags": [
+        "unsupported_technology"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "unsupported_technology"
+        ],
+        "rationale": "调用模型 API 不等于使用过 LangChain。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "unsupported_technology"
+        ],
+        "claims": [
+          {
+            "claimText": "基于 LangChain 完成大模型问答原型",
+            "claimType": "技术",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "fact-001 仅说明调用大模型 API 完成问答原型，未提及 LangChain 技术；缺少支持 LangChain 的 Fact。"
+          }
+        ],
+        "unsupportedClaims": [
+          "基于 LangChain 完成大模型问答原型"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "调用大模型 API 完成问答原型。",
+          "调用大模型 API 完成问答原型。"
+        ],
+        "reason": "事实声明没有 supporting Fact；fact-001 仅说明调用大模型 API 完成问答原型，未提及 LangChain 技术；缺少支持 LangChain 的 Fact。",
+        "validationId": "validation-eval-DEV-SNG-008"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "unsupported_technology"
+      ],
+      "violationTypesActual": [
+        "unsupported_technology"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1327,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-009",
+      "title": "新增灰度实验经历",
+      "category": "single-risk",
+      "riskTags": [
+        "unsupported_experiment"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "unsupported_experiment"
+        ],
+        "rationale": "内部体验反馈不能等同于经过设计的灰度实验。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "unsupported_experiment",
+          "unsupported_claim"
+        ],
+        "claims": [
+          {
+            "claimText": "设计灰度实验",
+            "claimType": "方法",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "f-001 仅支持邀请同事体验并收集意见，无法支持设计灰度实验这一方法。"
+          },
+          {
+            "claimText": "验证新功能方案",
+            "claimType": "行动",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "f-001 中无验证方案相关内容，无法支持验证新功能方案的声明。"
+          }
+        ],
+        "unsupportedClaims": [
+          "设计灰度实验",
+          "验证新功能方案"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "上线前邀请同事体验新功能并收集意见。",
+          "上线前邀请同事体验新功能并收集意见。"
+        ],
+        "reason": "事实声明没有 supporting Fact；f-001 仅支持邀请同事体验并收集意见，无法支持设计灰度实验这一方法。；f-001 中无验证方案相关内容，无法支持验证新功能方案的声明。",
+        "validationId": "validation-eval-DEV-SNG-009"
+      },
+      "status": "FAIL",
+      "passed": false,
+      "failedChecks": [
+        "violationTypes: expected [\"unsupported_experiment\"], actual [\"unsupported_claim\",\"unsupported_experiment\"]"
+      ],
+      "violationTypesExpected": [
+        "unsupported_experiment"
+      ],
+      "violationTypesActual": [
+        "unsupported_claim",
+        "unsupported_experiment"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1331,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-010",
+      "title": "新增可用性实验方法",
+      "category": "single-risk",
+      "riskTags": [
+        "unsupported_experiment"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "unsupported_experiment"
+        ],
+        "rationale": "普通沟通不能证明执行过具有任务设计的可用性实验。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "unsupported_experiment"
+        ],
+        "claims": [
+          {
+            "claimText": "执行可用性实验评估原型任务完成情况。",
+            "claimType": "方法",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "当前 Fact Set 仅支持与用户沟通原型使用感受，无法支持开展可用性实验及评估任务完成情况这一方法性声明。"
+          }
+        ],
+        "unsupportedClaims": [
+          "执行可用性实验评估原型任务完成情况。"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "与用户沟通原型使用感受。",
+          "与用户沟通原型使用感受。"
+        ],
+        "reason": "事实声明没有 supporting Fact；当前 Fact Set 仅支持与用户沟通原型使用感受，无法支持开展可用性实验及评估任务完成情况这一方法性声明。",
+        "validationId": "validation-eval-DEV-SNG-010"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "unsupported_experiment"
+      ],
+      "violationTypesActual": [
+        "unsupported_experiment"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1229,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-011",
+      "title": "访谈人数由 20 改为 50",
+      "category": "single-risk",
+      "riskTags": [
+        "numeric_value_changed"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "numeric_value_changed"
+        ],
+        "rationale": "用户人数口径不变，但数值从 20 被改为 50。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "numeric_value_changed"
+        ],
+        "claims": [
+          {
+            "claimText": "访谈 50 名目标用户",
+            "claimType": "数字",
+            "supported": false,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 支持的访谈人数为 20 名，与该声明中的 50 不一致。"
+          },
+          {
+            "claimText": "整理记录",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确包含整理记录这一行动。"
+          }
+        ],
+        "unsupportedClaims": [
+          "访谈 50 名目标用户"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "访谈 20 名目标用户并整理记录。",
+          "访谈 20 名目标用户并整理记录。"
+        ],
+        "reason": "数字或口径无法追溯：50名；f-001 支持的访谈人数为 20 名，与该声明中的 50 不一致。",
+        "validationId": "validation-eval-DEV-SNG-011"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "numeric_value_changed"
+      ],
+      "violationTypesActual": [
+        "numeric_value_changed"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1128,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-012",
+      "title": "六次访谈改成六名用户",
+      "category": "single-risk",
+      "riskTags": [
+        "numeric_metric_changed"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "numeric_metric_changed"
+        ],
+        "rationale": "数字相同但“次数”被改为“人数”，改变了指标口径。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "numeric_metric_changed",
+          "numeric_value_changed"
+        ],
+        "claims": [
+          {
+            "claimText": "访谈 6 名用户",
+            "claimType": "数字",
+            "supported": false,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确记录完成 6 次用户访谈，与声明的数字 6 及访谈行为一致。"
+          }
+        ],
+        "unsupportedClaims": [
+          "访谈 6 名用户"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "完成 6 次用户访谈。",
+          "完成 6 次用户访谈。"
+        ],
+        "reason": "数字或口径无法追溯：6名；supporting Fact 的内容无法支撑该声明",
+        "validationId": "validation-eval-DEV-SNG-012"
+      },
+      "status": "FAIL",
+      "passed": false,
+      "failedChecks": [
+        "violationTypes: expected [\"numeric_metric_changed\"], actual [\"numeric_metric_changed\",\"numeric_value_changed\"]"
+      ],
+      "violationTypesExpected": [
+        "numeric_metric_changed"
+      ],
+      "violationTypesActual": [
+        "numeric_metric_changed",
+        "numeric_value_changed"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1431,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-013",
+      "title": "原型升级为内部测试",
+      "category": "single-risk",
+      "riskTags": [
+        "project_status_upgrade"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "project_status_upgrade"
+        ],
+        "rationale": "高保真原型不能证明项目已进入内部测试。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "project_status_upgrade"
+        ],
+        "claims": [
+          {
+            "claimText": "完成报表产品",
+            "claimType": "项目状态",
+            "supported": false,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "fact-001 仅支持完成报表产品高保真原型，未支持完成整个报表产品，项目阶段与产出物范围不一致。"
+          },
+          {
+            "claimText": "进入内部测试",
+            "claimType": "项目状态",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "当前 allowed Fact Set 仅支持高保真原型，无法支持进入内部测试这一项目阶段。"
+          }
+        ],
+        "unsupportedClaims": [
+          "完成报表产品",
+          "进入内部测试"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "完成报表产品高保真原型。",
+          "完成报表产品高保真原型。"
+        ],
+        "reason": "项目状态超过 Fact 支持上限；fact-001 仅支持完成报表产品高保真原型，未支持完成整个报表产品，项目阶段与产出物范围不一致。；事实声明没有 supporting Fact；当前 allowed Fact Set 仅支持高保真原型，无法支持进入内部测试这一项目阶段。",
+        "validationId": "validation-eval-DEV-SNG-013"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "project_status_upgrade"
+      ],
+      "violationTypesActual": [
+        "project_status_upgrade"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1534,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-014",
+      "title": "协助分析升级为负责分析",
+      "category": "single-risk",
+      "riskTags": [
+        "responsibility_upgrade"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "responsibility_upgrade"
+        ],
+        "rationale": "同一行动的职责从协助提升为负责。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "responsibility_upgrade"
+        ],
+        "claims": [
+          {
+            "claimText": "负责开展流失原因分析",
+            "claimType": "职责",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "f-001 仅支持“协助开展流失原因分析”，职责层级为协助，不能升级为“负责”。"
+          }
+        ],
+        "unsupportedClaims": [
+          "负责开展流失原因分析"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "协助开展流失原因分析。",
+          "协助开展流失原因分析。"
+        ],
+        "reason": "职责等级超过 Fact 支持上限（允许 协助）；事实声明没有 supporting Fact；f-001 仅支持“协助开展流失原因分析”，职责层级为协助，不能升级为“负责”。",
+        "validationId": "validation-eval-DEV-SNG-014"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "responsibility_upgrade"
+      ],
+      "violationTypesActual": [
+        "responsibility_upgrade"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 920,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-016",
+      "title": "熟悉 SQL 包装为精通",
+      "category": "single-risk",
+      "riskTags": [
+        "capability_overstatement"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "capability_overstatement"
+        ],
+        "rationale": "任务范围保持为基础查询，唯一变化是能力程度从熟悉提升为精通。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "capability_overstatement"
+        ],
+        "claims": [
+          {
+            "claimText": "精通 SQL",
+            "claimType": "技术",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "f-001 仅支持“熟悉 SQL”，能力程度为熟悉；声明将能力提升为“精通/专家级”，超出 Fact 支持程度。"
+          },
+          {
+            "claimText": "能够完成基础查询",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 原文明确为“能够完成基础查询”，直接支持该行动声明。"
+          }
+        ],
+        "unsupportedClaims": [
+          "精通 SQL"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "熟悉 SQL，能够完成基础查询。",
+          "熟悉 SQL，能够完成基础查询。"
+        ],
+        "reason": "能力程度超过 Fact 支持上限（允许 熟悉）；事实声明没有 supporting Fact；f-001 仅支持“熟悉 SQL”，能力程度为熟悉；声明将能力提升为“精通/专家级”，超出 Fact 支持程度。",
+        "validationId": "validation-eval-DEV-SNG-016",
+        "evaluationDebug": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "finishReason": "stop",
+              "errorCode": "SCHEMA_INVALID",
+              "schemaErrors": [
+                {
+                  "errorPath": "$.validations[0].claims[1].claimType",
+                  "errorType": "enum",
+                  "expected": "职责 | 行动 | 技术 | 方法 | 数字 | 结果 | 项目状态 | 用户规模 | 其他",
+                  "actual": "能力"
+                }
+              ],
+              "responsePreview": {
+                "validations": [
+                  {
+                    "rewriteId": "eval-DEV-SNG-016",
+                    "claims": [
+                      {
+                        "claimText": "精通 SQL",
+                        "claimType": "技术",
+                        "supported": false,
+                        "supportingFactIds": [
+                          "<max-depth>"
+                        ],
+                        "reason": "f-001 只支持“熟悉 SQL”，能力程度为熟悉，不足以支持“精通”这一更高程度。"
+                      },
+                      {
+                        "claimText": "能够完成基础查询",
+                        "claimType": "能力",
+                        "supported": true,
+                        "supportingFactIds": [
+                          "<max-depth>"
+                        ],
+                        "reason": "f-001 明确支持能够完成基础查询。"
+                      }
+                    ],
+                    "reason": "存在能力程度升级的声明：“熟悉 SQL”被改写为“精通 SQL”，无法由 Fact 支持；其余声明有 Fact 支持。"
+                  }
+                ]
+              }
+            },
+            {
+              "attempt": 2,
+              "finishReason": "stop",
+              "errorCode": null,
+              "schemaErrors": [],
+              "responsePreview": {
+                "validations": [
+                  {
+                    "rewriteId": "eval-DEV-SNG-016",
+                    "claims": [
+                      {
+                        "claimText": "精通 SQL",
+                        "claimType": "技术",
+                        "supported": false,
+                        "supportingFactIds": [],
+                        "reason": "f-001 仅支持“熟悉 SQL”，能力程度为熟悉；声明将能力提升为“精通/专家级”，超出 Fact 支持程度。"
+                      },
+                      {
+                        "claimText": "能够完成基础查询",
+                        "claimType": "行动",
+                        "supported": true,
+                        "supportingFactIds": [
+                          "<max-depth>"
+                        ],
+                        "reason": "f-001 原文明确为“能够完成基础查询”，直接支持该行动声明。"
+                      }
+                    ],
+                    "reason": "存在能力程度与 Fact 不一致的声明：f-001 仅支持“熟悉 SQL”，不支持“精通 SQL”，因此校验不通过。"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "capability_overstatement"
+      ],
+      "violationTypesActual": [
+        "capability_overstatement"
+      ],
+      "attempts": 2,
+      "modelRetryOccurred": true,
+      "latencyMs": 2536,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [
+        {
+          "errorPath": "$.validations[0].claims[1].claimType",
+          "errorType": "enum",
+          "expected": "职责 | 行动 | 技术 | 方法 | 数字 | 结果 | 项目状态 | 用户规模 | 其他",
+          "actual": "能力"
+        }
+      ],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": "SCHEMA_INVALID",
+          "schemaErrors": [
+            {
+              "errorPath": "$.validations[0].claims[1].claimType",
+              "errorType": "enum",
+              "expected": "职责 | 行动 | 技术 | 方法 | 数字 | 结果 | 项目状态 | 用户规模 | 其他",
+              "actual": "能力"
+            }
+          ],
+          "responsePreview": {
+            "validations": [
+              {
+                "rewriteId": "eval-DEV-SNG-016",
+                "claims": [
+                  {
+                    "claimText": "精通 SQL",
+                    "claimType": "技术",
+                    "supported": false,
+                    "supportingFactIds": [
+                      "<max-depth>"
+                    ],
+                    "reason": "f-001 只支持“熟悉 SQL”，能力程度为熟悉，不足以支持“精通”这一更高程度。"
+                  },
+                  {
+                    "claimText": "能够完成基础查询",
+                    "claimType": "能力",
+                    "supported": true,
+                    "supportingFactIds": [
+                      "<max-depth>"
+                    ],
+                    "reason": "f-001 明确支持能够完成基础查询。"
+                  }
+                ],
+                "reason": "存在能力程度升级的声明：“熟悉 SQL”被改写为“精通 SQL”，无法由 Fact 支持；其余声明有 Fact 支持。"
+              }
+            ]
+          }
+        },
+        {
+          "attempt": 2,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": [],
+          "responsePreview": {
+            "validations": [
+              {
+                "rewriteId": "eval-DEV-SNG-016",
+                "claims": [
+                  {
+                    "claimText": "精通 SQL",
+                    "claimType": "技术",
+                    "supported": false,
+                    "supportingFactIds": [],
+                    "reason": "f-001 仅支持“熟悉 SQL”，能力程度为熟悉；声明将能力提升为“精通/专家级”，超出 Fact 支持程度。"
+                  },
+                  {
+                    "claimText": "能够完成基础查询",
+                    "claimType": "行动",
+                    "supported": true,
+                    "supportingFactIds": [
+                      "<max-depth>"
+                    ],
+                    "reason": "f-001 原文明确为“能够完成基础查询”，直接支持该行动声明。"
+                  }
+                ],
+                "reason": "存在能力程度与 Fact 不一致的声明：f-001 仅支持“熟悉 SQL”，不支持“精通 SQL”，因此校验不通过。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-017",
+      "title": "项目 A 结果写入项目 B",
+      "category": "single-risk",
+      "riskTags": [
+        "cross_project_fact"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "cross_project_fact"
+        ],
+        "rationale": "200ms 结果属于结算项目，不能写入库存预警经历。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "cross_project_fact",
+          "unsupported_result",
+          "numeric_metric_changed"
+        ],
+        "claims": [
+          {
+            "claimText": "参与库存预警原型设计",
+            "claimType": "职责",
+            "supported": true,
+            "supportingFactIds": [
+              "f-b"
+            ],
+            "reason": "f-b 明确支持在 exp-b 中参与库存预警原型设计。"
+          },
+          {
+            "claimText": "将接口响应时间降至 200ms",
+            "claimType": "结果",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "所引 f-a 属于 exp-a 结算项目，不能支持本 Rewrite（exp-b）中库存预警项目的接口响应时间结果；缺少同一 experienceId 下可支持该数字与结果的 Fact。"
+          },
+          {
+            "claimText": "库存预警场景下的接口响应时间降至 200ms",
+            "claimType": "数字",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "f-a 的数字及统计对象归属 exp-a 结算项目，无法支持 exp-b 库存预警项目中的 200ms 数字口径。"
+          }
+        ],
+        "unsupportedClaims": [
+          "将接口响应时间降至 200ms",
+          "库存预警场景下的接口响应时间降至 200ms"
+        ],
+        "usedFactIds": [
+          "f-a",
+          "f-b"
+        ],
+        "invalidFactIds": [
+          "f-a"
+        ],
+        "evidenceClaims": [
+          "结算项目将接口响应时间降至 200ms。",
+          "结算项目将接口响应时间降至 200ms。",
+          "参与库存预警原型设计。",
+          "参与库存预警原型设计。"
+        ],
+        "reason": "引用了其他项目的 Fact；存在跨项目 Fact；事实声明没有 supporting Fact；所引 f-a 属于 exp-a 结算项目，不能支持本 Rewrite（exp-b）中库存预警项目的接口响应时间结果；缺少同一 experienceId 下可支持该数字与结果的 Fact。；f-a 的数字及统计对象归属 exp-a 结算项目，无法支持 exp-b 库存预警项目中的 200ms 数字口径。",
+        "validationId": "validation-eval-DEV-SNG-017"
+      },
+      "status": "FAIL",
+      "passed": false,
+      "failedChecks": [
+        "violationTypes: expected [\"cross_project_fact\"], actual [\"cross_project_fact\",\"numeric_metric_changed\",\"unsupported_result\"]"
+      ],
+      "violationTypesExpected": [
+        "cross_project_fact"
+      ],
+      "violationTypesActual": [
+        "cross_project_fact",
+        "numeric_metric_changed",
+        "unsupported_result"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1970,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-018",
+      "title": "尚未开始的未来计划不得写成完成经历",
+      "category": "single-risk",
+      "riskTags": [
+        "rewrite_not_allowed"
+      ],
+      "expected": {
+        "validationStatus": "not_run",
+        "violationTypes": [
+          "rewrite_not_allowed"
+        ],
+        "rationale": "唯一来源是尚未开始的未来计划，不构成可合法 Rewrite 的已发生经历。"
+      },
+      "actual": {
+        "matchStatus": "部分满足",
+        "gapType": "能力缺口",
+        "capabilityGapSubtype": "能力程度不足",
+        "rewritePermission": "有限改写",
+        "rewriteCallAllowed": false,
+        "violationTypes": [
+          "rewrite_not_allowed"
+        ]
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "rewrite_not_allowed"
+      ],
+      "violationTypesActual": [
+        "rewrite_not_allowed"
+      ],
+      "attempts": 0,
+      "modelRetryOccurred": false,
+      "latencyMs": 1,
+      "finishReason": null,
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": []
+    },
+    {
+      "testCaseId": "DEV-MLT-001",
+      "title": "职责升级并放大用户数量",
+      "category": "multi-risk",
+      "riskTags": [
+        "responsibility_upgrade",
+        "numeric_value_changed"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "responsibility_upgrade",
+          "numeric_value_changed"
+        ],
+        "rationale": "“参与整理”变为“负责整理”是职责等级提升；同一访谈记录数量从 30 名变为 80 名，是数值变化。两项标签分别对应独立变化。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "responsibility_upgrade",
+          "numeric_value_changed"
+        ],
+        "claims": [
+          {
+            "claimText": "负责整理 80 名用户的访谈记录",
+            "claimType": "职责",
+            "supported": false,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 显示为“参与整理 30 名用户”，职责等级为参与而非负责，且用户人数为 30 而非 80，均与该声明不一致。"
+          }
+        ],
+        "unsupportedClaims": [
+          "负责整理 80 名用户的访谈记录"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "参与整理 30 名用户的访谈记录。",
+          "参与整理 30 名用户的访谈记录。"
+        ],
+        "reason": "职责等级超过 Fact 支持上限（允许 参与）；数字或口径无法追溯：80名；f-001 显示为“参与整理 30 名用户”，职责等级为参与而非负责，且用户人数为 30 而非 80，均与该声明不一致。",
+        "validationId": "validation-eval-DEV-MLT-001"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "numeric_value_changed",
+        "responsibility_upgrade"
+      ],
+      "violationTypesActual": [
+        "numeric_value_changed",
+        "responsibility_upgrade"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1194,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-MLT-002",
+      "title": "项目阶段升级并新增上线后运营",
+      "category": "multi-risk",
+      "riskTags": [
+        "project_status_upgrade",
+        "unsupported_claim"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "project_status_upgrade",
+          "unsupported_claim"
+        ],
+        "rationale": "Demo 被描述为正式投入使用，同时新增了上线后运营行动。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "project_status_upgrade",
+          "unsupported_claim"
+        ],
+        "claims": [
+          {
+            "claimText": "客服助手已正式投入使用",
+            "claimType": "项目状态",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "f-001 仅说明完成 Demo 并验证问答流程，属于原型/Demo 阶段，无法支持正式投入使用（正式上线/生产使用）的项目状态。"
+          },
+          {
+            "claimText": "持续开展上线后运营",
+            "claimType": "职责",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "f-001 只记录完成 Demo 与验证流程，未提及任何上线后运营职责或相关工作。"
+          }
+        ],
+        "unsupportedClaims": [
+          "客服助手已正式投入使用",
+          "持续开展上线后运营"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "完成客服助手 Demo，验证问答流程。",
+          "完成客服助手 Demo，验证问答流程。"
+        ],
+        "reason": "项目状态超过 Fact 支持上限；事实声明没有 supporting Fact；f-001 仅说明完成 Demo 并验证问答流程，属于原型/Demo 阶段，无法支持正式投入使用（正式上线/生产使用）的项目状态。；f-001 只记录完成 Demo 与验证流程，未提及任何上线后运营职责或相关工作。",
+        "validationId": "validation-eval-DEV-MLT-002"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "project_status_upgrade",
+        "unsupported_claim"
+      ],
+      "violationTypesActual": [
+        "project_status_upgrade",
+        "unsupported_claim"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1451,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-MLT-003",
+      "title": "新增技术栈并虚构业务结果",
+      "category": "multi-risk",
+      "riskTags": [
+        "unsupported_technology",
+        "unsupported_result"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "unsupported_technology",
+          "unsupported_result"
+        ],
+        "rationale": "“知识图谱”是 Source 未支持的技术；“降低审批时长”是 Source 未支持的结果。重构审批流程本身已有事实基础，两项标签具有独立证据。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "unsupported_result",
+          "unsupported_technology"
+        ],
+        "claims": [
+          {
+            "claimText": "基于知识图谱重构审批流程",
+            "claimType": "技术",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "fact-001 明确技术为规则引擎，不支持知识图谱这一技术表述。"
+          },
+          {
+            "claimText": "降低审批时长",
+            "claimType": "结果",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "现有 Fact 仅描述使用规则引擎重构审批流程，未提供任何降低审批时长或相关结果的支持。"
+          }
+        ],
+        "unsupportedClaims": [
+          "基于知识图谱重构审批流程",
+          "降低审批时长"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "使用规则引擎重构审批流程。",
+          "使用规则引擎重构审批流程。"
+        ],
+        "reason": "结果性表达“降低”没有真实 Fact 支持；事实声明没有 supporting Fact；fact-001 明确技术为规则引擎，不支持知识图谱这一技术表述。；现有 Fact 仅描述使用规则引擎重构审批流程，未提供任何降低审批时长或相关结果的支持。",
+        "validationId": "validation-eval-DEV-MLT-003"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "unsupported_result",
+        "unsupported_technology"
+      ],
+      "violationTypesActual": [
+        "unsupported_result",
+        "unsupported_technology"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1354,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-MLT-004",
+      "title": "跨项目结果与职责升级",
+      "category": "multi-risk",
+      "riskTags": [
+        "cross_project_fact",
+        "responsibility_upgrade"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "cross_project_fact",
+          "responsibility_upgrade"
+        ],
+        "rationale": "“参与需求分析”变为“负责需求分析”是职责等级提升；70% 续费率来自会员项目却被写入推荐项目，是跨项目事实。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "responsibility_upgrade",
+          "cross_project_fact"
+        ],
+        "claims": [
+          {
+            "claimText": "负责推荐模块需求分析",
+            "claimType": "职责",
+            "supported": false,
+            "supportingFactIds": [
+              "f-b"
+            ],
+            "reason": "f-b 仅支持“参与推荐模块需求分析”，职责层级低于“负责”，缺少支持负责职责的 Fact。"
+          },
+          {
+            "claimText": "将续费率提升至 70%",
+            "claimType": "数字",
+            "supported": false,
+            "supportingFactIds": [
+              "f-a"
+            ],
+            "reason": "f-a 属于 experienceId exp-a 的会员项目，与本次 rewrite 所属 exp-b 不是同一项目，不能支持推荐模块的续费率数字。"
+          }
+        ],
+        "unsupportedClaims": [
+          "负责推荐模块需求分析",
+          "将续费率提升至 70%"
+        ],
+        "usedFactIds": [
+          "f-a",
+          "f-b"
+        ],
+        "invalidFactIds": [
+          "f-a"
+        ],
+        "evidenceClaims": [
+          "会员项目将续费率提升至 70%。",
+          "会员项目将续费率提升至 70%。",
+          "参与推荐模块需求分析。",
+          "参与推荐模块需求分析。"
+        ],
+        "reason": "引用了其他项目的 Fact；职责等级超过 Fact 支持上限（允许 参与）；存在跨项目 Fact；f-b 仅支持“参与推荐模块需求分析”，职责层级低于“负责”，缺少支持负责职责的 Fact。；f-a 属于 experienceId exp-a 的会员项目，与本次 rewrite 所属 exp-b 不是同一项目，不能支持推荐模块的续费率数字。",
+        "validationId": "validation-eval-DEV-MLT-004"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "cross_project_fact",
+        "responsibility_upgrade"
+      ],
+      "violationTypesActual": [
+        "cross_project_fact",
+        "responsibility_upgrade"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1466,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-MLT-005",
+      "title": "修改订单数并新增复购结果",
+      "category": "multi-risk",
+      "riskTags": [
+        "numeric_value_changed",
+        "unsupported_number",
+        "unsupported_result"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "numeric_value_changed",
+          "unsupported_number",
+          "unsupported_result"
+        ],
+        "rationale": "“40 笔”变为“90 笔”是同一订单指标数值变化；“15%”是 Source 中不存在的新数字；“复购率提升”是 Source 明确未统计的新增结果。三项标签分别对应独立证据。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "numeric_value_changed",
+          "unsupported_result"
+        ],
+        "claims": [
+          {
+            "claimText": "校园二手平台完成 90 笔测试订单",
+            "claimType": "数字",
+            "supported": false,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确记录为 40 笔测试订单，90 笔与事实数字不一致。"
+          },
+          {
+            "claimText": "复购率提升 15%",
+            "claimType": "结果",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "f-001 明确说明未统计复购数据，没有任何 Fact 支持复购率提升 15%。"
+          }
+        ],
+        "unsupportedClaims": [
+          "校园二手平台完成 90 笔测试订单",
+          "复购率提升 15%"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "校园二手平台完成 40 笔测试订单，未统计复购数据。",
+          "校园二手平台完成 40 笔测试订单，未统计复购数据。"
+        ],
+        "reason": "数字或口径无法追溯：90；数字或口径无法追溯：15%；结果性表达“提升”没有真实 Fact 支持；f-001 明确记录为 40 笔测试订单，90 笔与事实数字不一致。；事实声明没有 supporting Fact；f-001 明确说明未统计复购数据，没有任何 Fact 支持复购率提升 15%。",
+        "validationId": "validation-eval-DEV-MLT-005"
+      },
+      "status": "FAIL",
+      "passed": false,
+      "failedChecks": [
+        "violationTypes: expected [\"numeric_value_changed\",\"unsupported_number\",\"unsupported_result\"], actual [\"numeric_value_changed\",\"unsupported_result\"]"
+      ],
+      "violationTypesExpected": [
+        "numeric_value_changed",
+        "unsupported_number",
+        "unsupported_result"
+      ],
+      "violationTypesActual": [
+        "numeric_value_changed",
+        "unsupported_result"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1180,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-MLT-007",
+      "title": "阶段职责与用户规模三重升级",
+      "category": "multi-risk",
+      "riskTags": [
+        "responsibility_upgrade",
+        "project_status_upgrade",
+        "unsupported_number"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "responsibility_upgrade",
+          "project_status_upgrade",
+          "unsupported_number"
+        ],
+        "rationale": "“参与交付”变为“主导”是职责等级提升；Demo 验证变为正式上线是项目状态升级；10 万名用户是 Source 未提供的新数字。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "responsibility_upgrade",
+          "project_status_upgrade",
+          "unsupported_number",
+          "unsupported_claim"
+        ],
+        "claims": [
+          {
+            "claimText": "主导智能客服正式上线",
+            "claimType": "职责",
+            "supported": false,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 仅支持参与项目交付和完成 Demo 验证，不支持主导职责，也不支持正式上线状态。"
+          },
+          {
+            "claimText": "服务 10 万名用户",
+            "claimType": "用户规模",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "当前 allowed Fact Set 中没有任何支持服务 10 万名用户的规模数据。"
+          }
+        ],
+        "unsupportedClaims": [
+          "主导智能客服正式上线",
+          "服务 10 万名用户"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "参与智能客服项目交付，完成客服助手 Demo 验证。",
+          "参与智能客服项目交付，完成客服助手 Demo 验证。"
+        ],
+        "reason": "职责等级超过 Fact 支持上限（允许 参与）；项目状态超过 Fact 支持上限；数字或口径无法追溯：10；数字或口径无法追溯：万名；f-001 仅支持参与项目交付和完成 Demo 验证，不支持主导职责，也不支持正式上线状态。；事实声明没有 supporting Fact；当前 allowed Fact Set 中没有任何支持服务 10 万名用户的规模数据。",
+        "validationId": "validation-eval-DEV-MLT-007"
+      },
+      "status": "FAIL",
+      "passed": false,
+      "failedChecks": [
+        "violationTypes: expected [\"project_status_upgrade\",\"responsibility_upgrade\",\"unsupported_number\"], actual [\"project_status_upgrade\",\"responsibility_upgrade\",\"unsupported_claim\",\"unsupported_number\"]"
+      ],
+      "violationTypesExpected": [
+        "project_status_upgrade",
+        "responsibility_upgrade",
+        "unsupported_number"
+      ],
+      "violationTypesActual": [
+        "project_status_upgrade",
+        "responsibility_upgrade",
+        "unsupported_claim",
+        "unsupported_number"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1290,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-MLT-008",
+      "title": "跨项目事实并新增独立技术与结果",
+      "category": "multi-risk",
+      "riskTags": [
+        "cross_project_fact",
+        "unsupported_technology",
+        "unsupported_result"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "cross_project_fact",
+          "unsupported_technology",
+          "unsupported_result"
+        ],
+        "rationale": "图神经网络与 92% 准确率均真实存在但属于风控项目，因此由 cross_project_fact 完整覆盖；“实时语音识别”是独立新增技术，“降低人工处理时长”是独立新增结果。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "cross_project_fact",
+          "unsupported_result",
+          "unsupported_technology",
+          "numeric_metric_changed"
+        ],
+        "claims": [
+          {
+            "claimText": "在客服工单项目中应用图神经网络",
+            "claimType": "技术",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "usedFactIds 中无同一 experienceId 的 Fact 支持；f-a 属于 exp-a 而非 exp-b，f-b 只支持规则整理，不涉及图神经网络。"
+          },
+          {
+            "claimText": "将分类准确率提升至 92%",
+            "claimType": "数字",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "92% 准确率来自 exp-a 风控项目的 f-a，不能归属 exp-b 客服工单项目；exp-b 的 f-b 未提供任何数字指标。"
+          },
+          {
+            "claimText": "另引入实时语音识别",
+            "claimType": "技术",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "usedFactIds 中没有支持实时语音识别的同一 experienceId Fact。"
+          },
+          {
+            "claimText": "降低人工处理时长",
+            "claimType": "结果",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "无同一 experienceId 的 Fact 支持处理时长降低，也不能从引入语音识别推导出该结果。"
+          }
+        ],
+        "unsupportedClaims": [
+          "在客服工单项目中应用图神经网络",
+          "将分类准确率提升至 92%",
+          "另引入实时语音识别",
+          "降低人工处理时长"
+        ],
+        "usedFactIds": [
+          "f-a",
+          "f-b"
+        ],
+        "invalidFactIds": [
+          "f-a"
+        ],
+        "evidenceClaims": [
+          "风控项目使用图神经网络，准确率达到 92%。",
+          "风控项目使用图神经网络，准确率达到 92%。",
+          "参与客服工单分类规则整理。",
+          "参与客服工单分类规则整理。"
+        ],
+        "reason": "引用了其他项目的 Fact；结果性表达“提升”没有真实 Fact 支持；结果性表达“降低”没有真实 Fact 支持；存在跨项目 Fact；事实声明没有 supporting Fact；usedFactIds 中无同一 experienceId 的 Fact 支持；f-a 属于 exp-a 而非 exp-b，f-b 只支持规则整理，不涉及图神经网络。；92% 准确率来自 exp-a 风控项目的 f-a，不能归属 exp-b 客服工单项目；exp-b 的 f-b 未提供任何数字指标。；usedFactIds 中没有支持实时语音识别的同一 experienceId Fact。；无同一 experienceId 的 Fact 支持处理时长降低，也不能从引入语音识别推导出该结果。",
+        "validationId": "validation-eval-DEV-MLT-008"
+      },
+      "status": "FAIL",
+      "passed": false,
+      "failedChecks": [
+        "violationTypes: expected [\"cross_project_fact\",\"unsupported_result\",\"unsupported_technology\"], actual [\"cross_project_fact\",\"numeric_metric_changed\",\"unsupported_result\",\"unsupported_technology\"]"
+      ],
+      "violationTypesExpected": [
+        "cross_project_fact",
+        "unsupported_result",
+        "unsupported_technology"
+      ],
+      "violationTypesActual": [
+        "cross_project_fact",
+        "numeric_metric_changed",
+        "unsupported_result",
+        "unsupported_technology"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1635,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-001",
+      "title": "参与改为协助的职责下降",
+      "category": "boundary",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "职责从参与降为协助，内容不超出事实，应通过。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "协助整理用户访谈记录",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 为已确认的行动事实，内容为“参与整理用户访谈记录”，与“协助整理用户访谈记录”属同级表达，事实强度一致。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "参与整理用户访谈记录。",
+          "参与整理用户访谈记录。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-BDR-001"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1167,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-002",
+      "title": "参与改为负责的职责升级",
+      "category": "boundary",
+      "riskTags": [
+        "responsibility_upgrade"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "responsibility_upgrade"
+        ],
+        "rationale": "与配对 PASS Case 仅改变职责词，参与不能写成负责。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "responsibility_upgrade"
+        ],
+        "claims": [
+          {
+            "claimText": "负责整理用户访谈记录",
+            "claimType": "职责",
+            "supported": false,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 仅支持“参与整理”这一较低职责等级，无法支持“负责”所要求的更高 ownership。"
+          }
+        ],
+        "unsupportedClaims": [
+          "负责整理用户访谈记录"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "参与整理用户访谈记录。",
+          "参与整理用户访谈记录。"
+        ],
+        "reason": "职责等级超过 Fact 支持上限（允许 参与）；f-001 仅支持“参与整理”这一较低职责等级，无法支持“负责”所要求的更高 ownership。",
+        "validationId": "validation-eval-DEV-BDR-002"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "responsibility_upgrade"
+      ],
+      "violationTypesActual": [
+        "responsibility_upgrade"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1193,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-003",
+      "title": "参与需求分析的同等级表达",
+      "category": "boundary",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "保持参与等级和原行动，只压缩表达。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "参与需求分析",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确包含“参与需求分析”，支持该行动声明。"
+          },
+          {
+            "claimText": "整理讨论结论",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 中“记录讨论结论”与“整理讨论结论”为同级表达，未提高事实强度，支持该声明。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "参与需求分析并记录讨论结论。",
+          "参与需求分析并记录讨论结论。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-BDR-003"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1106,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-004",
+      "title": "参与需求分析升级为主导",
+      "category": "boundary",
+      "riskTags": [
+        "responsibility_upgrade"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "responsibility_upgrade"
+        ],
+        "rationale": "与配对 PASS Case 相比，记录行动保持不变，唯一关键变化是“参与”提升为“主导”。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "responsibility_upgrade"
+        ],
+        "claims": [
+          {
+            "claimText": "主导需求分析",
+            "claimType": "职责",
+            "supported": false,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 仅支持“参与需求分析”，属于参与层级，不能支持“主导”这一更高职责层级。"
+          },
+          {
+            "claimText": "记录讨论结论",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确包含“记录讨论结论”，支持该行动。"
+          }
+        ],
+        "unsupportedClaims": [
+          "主导需求分析"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "参与需求分析并记录讨论结论。",
+          "参与需求分析并记录讨论结论。"
+        ],
+        "reason": "职责等级超过 Fact 支持上限（允许 参与）；f-001 仅支持“参与需求分析”，属于参与层级，不能支持“主导”这一更高职责层级。",
+        "validationId": "validation-eval-DEV-BDR-004"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "responsibility_upgrade"
+      ],
+      "violationTypesActual": [
+        "responsibility_upgrade"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1279,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-005",
+      "title": "负责功能方案的同等级改写",
+      "category": "boundary",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "职责等级、工作对象和范围均未改变。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "负责推荐功能的方案设计。",
+            "claimType": "职责",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确记载负责推荐功能方案设计，与重写文本的职责与内容一致。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "负责推荐功能方案设计。",
+          "负责推荐功能方案设计。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-BDR-005"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1196,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-006",
+      "title": "负责升级为独立负责",
+      "category": "boundary",
+      "riskTags": [
+        "responsibility_upgrade"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "responsibility_upgrade"
+        ],
+        "rationale": "“独立负责”比“负责”增加了独立 ownership。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "responsibility_upgrade"
+        ],
+        "claims": [
+          {
+            "claimText": "独立负责推荐功能方案设计",
+            "claimType": "职责",
+            "supported": false,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "fact-001 仅支持“负责推荐功能方案设计”，不足以支持“独立负责”这一更高职责等级。"
+          }
+        ],
+        "unsupportedClaims": [
+          "独立负责推荐功能方案设计"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "负责推荐功能方案设计。",
+          "负责推荐功能方案设计。"
+        ],
+        "reason": "职责等级超过 Fact 支持上限（允许 负责）；fact-001 仅支持“负责推荐功能方案设计”，不足以支持“独立负责”这一更高职责等级。",
+        "validationId": "validation-eval-DEV-BDR-006"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "responsibility_upgrade"
+      ],
+      "violationTypesActual": [
+        "responsibility_upgrade"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 849,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-007",
+      "title": "搜索模块职责合法保留",
+      "category": "boundary",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "仍局限于搜索模块，没有扩大到整个产品。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "负责搜索模块的需求管理和交付",
+            "claimType": "职责",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确支持负责搜索模块需求与交付，与声明职责等级和内容一致。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "负责搜索模块需求与交付。",
+          "负责搜索模块需求与交付。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-BDR-007"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1159,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-008",
+      "title": "模块职责扩大为整个产品",
+      "category": "boundary",
+      "riskTags": [
+        "responsibility_scope_expanded"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "responsibility_scope_expanded"
+        ],
+        "rationale": "职责等级和行动保持不变，唯一关键变化是负责对象从搜索模块扩大为整个搜索产品。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "responsibility_scope_expanded",
+          "responsibility_upgrade"
+        ],
+        "claims": [
+          {
+            "claimText": "负责整个搜索产品需求与交付",
+            "claimType": "职责",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "f-001 仅支持“搜索模块需求与交付”，不支持将范围扩大到“整个搜索产品”的职责声明。"
+          }
+        ],
+        "unsupportedClaims": [
+          "负责整个搜索产品需求与交付"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "负责搜索模块需求与交付。",
+          "负责搜索模块需求与交付。"
+        ],
+        "reason": "事实声明没有 supporting Fact；f-001 仅支持“搜索模块需求与交付”，不支持将范围扩大到“整个搜索产品”的职责声明。",
+        "validationId": "validation-eval-DEV-BDR-008"
+      },
+      "status": "FAIL",
+      "passed": false,
+      "failedChecks": [
+        "violationTypes: expected [\"responsibility_scope_expanded\"], actual [\"responsibility_scope_expanded\",\"responsibility_upgrade\"]"
+      ],
+      "violationTypesExpected": [
+        "responsibility_scope_expanded"
+      ],
+      "violationTypesActual": [
+        "responsibility_scope_expanded",
+        "responsibility_upgrade"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1262,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-009",
+      "title": "在 MVP 阶段优化核心流程",
+      "category": "boundary",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "完成 MVP 与优化核心流程均有事实支持，且候选仍明确保留 MVP 阶段。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "完成产品 MVP 核心流程",
+            "claimType": "职责",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确支持完成产品 MVP 及核心流程的表述。"
+          },
+          {
+            "claimText": "优化产品 MVP 核心流程",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确支持根据反馈优化核心流程。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "完成产品 MVP，并根据反馈优化核心流程。",
+          "完成产品 MVP，并根据反馈优化核心流程。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-BDR-009"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1261,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-010",
+      "title": "MVP 升级为正式上线",
+      "category": "boundary",
+      "riskTags": [
+        "project_status_upgrade"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "project_status_upgrade"
+        ],
+        "rationale": "优化行动已有事实支持；与配对 PASS Case 相比，唯一关键变化是项目阶段从 MVP 提升为正式上线。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "project_status_upgrade"
+        ],
+        "claims": [
+          {
+            "claimText": "产品已正式上线",
+            "claimType": "项目状态",
+            "supported": false,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 只支持完成产品 MVP，MVP 阶段低于正式上线，不能证明产品已正式上线。"
+          },
+          {
+            "claimText": "完成核心流程优化",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确支持根据反馈优化核心流程。"
+          }
+        ],
+        "unsupportedClaims": [
+          "产品已正式上线"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "完成产品 MVP，并根据反馈优化核心流程。",
+          "完成产品 MVP，并根据反馈优化核心流程。"
+        ],
+        "reason": "项目状态超过 Fact 支持上限；f-001 只支持完成产品 MVP，MVP 阶段低于正式上线，不能证明产品已正式上线。",
+        "validationId": "validation-eval-DEV-BDR-010"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "project_status_upgrade"
+      ],
+      "violationTypesActual": [
+        "project_status_upgrade"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1373,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-011",
+      "title": "完成产品 MVP 的同义表达",
+      "category": "boundary",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "“完成产品”被 MVP 明确限定，项目阶段没有变化。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "完成任务管理产品的 MVP 版本",
+            "claimType": "项目状态",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确支持完成任务管理 MVP，与声明的项目状态一致。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "完成任务管理 MVP。",
+          "完成任务管理 MVP。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-BDR-011"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1151,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-012",
+      "title": "完成 MVP 改为投入正式使用",
+      "category": "boundary",
+      "riskTags": [
+        "project_status_upgrade"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "project_status_upgrade"
+        ],
+        "rationale": "去除 MVP 限定并声称投入正式使用，属于项目阶段升级。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "project_status_upgrade"
+        ],
+        "claims": [
+          {
+            "claimText": "完成任务管理产品",
+            "claimType": "项目状态",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "fact-001 明确为完成任务管理 MVP，支持完成任务管理产品的表述。"
+          },
+          {
+            "claimText": "投入正式使用",
+            "claimType": "项目状态",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "fact-001 仅说明完成任务管理 MVP，无法支持已投入正式使用这一项目阶段升级。"
+          }
+        ],
+        "unsupportedClaims": [
+          "投入正式使用"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "完成任务管理 MVP。",
+          "完成任务管理 MVP。"
+        ],
+        "reason": "项目状态超过 Fact 支持上限；事实声明没有 supporting Fact；fact-001 仅说明完成任务管理 MVP，无法支持已投入正式使用这一项目阶段升级。",
+        "validationId": "validation-eval-DEV-BDR-012"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "project_status_upgrade"
+      ],
+      "violationTypesActual": [
+        "project_status_upgrade"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1410,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-013",
+      "title": "熟悉 SQL 的保守表达",
+      "category": "boundary",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "能力等级和应用范围均保持在基础熟悉层级。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "熟悉 SQL 基础语法",
+            "claimType": "技术",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确记载熟悉 SQL 基础语法，与该声明一致。"
+          },
+          {
+            "claimText": "可阅读常见基础查询",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确记载能够阅读基础查询，与该行动声明一致。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "熟悉 SQL 基础语法，能够阅读基础查询。",
+          "熟悉 SQL 基础语法，能够阅读基础查询。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-BDR-013",
+        "evaluationDebug": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "finishReason": "stop",
+              "errorCode": "SCHEMA_INVALID",
+              "schemaErrors": [
+                {
+                  "errorPath": "$.validations[0].claims[1].claimType",
+                  "errorType": "enum",
+                  "expected": "职责 | 行动 | 技术 | 方法 | 数字 | 结果 | 项目状态 | 用户规模 | 其他",
+                  "actual": "能力"
+                }
+              ],
+              "responsePreview": {
+                "validations": [
+                  {
+                    "rewriteId": "eval-DEV-BDR-013",
+                    "claims": [
+                      {
+                        "claimText": "熟悉 SQL 基础语法",
+                        "claimType": "技术",
+                        "supported": true,
+                        "supportingFactIds": [
+                          "<max-depth>"
+                        ],
+                        "reason": "f-001 原文明确写明熟悉 SQL 基础语法，与该声明一致。"
+                      },
+                      {
+                        "claimText": "可阅读常见基础查询",
+                        "claimType": "能力",
+                        "supported": true,
+                        "supportingFactIds": [
+                          "<max-depth>"
+                        ],
+                        "reason": "f-001 原文写明能够阅读基础查询，常见与基础的表述未超出事实强度。"
+                      }
+                    ],
+                    "reason": "该 Rewrite 的能力与技术声明均可由 f-001 直接支持，未发现职责等级、能力程度、数字、项目阶段或结果口径方面的无支撑升级。"
+                  }
+                ]
+              }
+            },
+            {
+              "attempt": 2,
+              "finishReason": "stop",
+              "errorCode": null,
+              "schemaErrors": [],
+              "responsePreview": {
+                "validations": [
+                  {
+                    "rewriteId": "eval-DEV-BDR-013",
+                    "claims": [
+                      {
+                        "claimText": "熟悉 SQL 基础语法",
+                        "claimType": "技术",
+                        "supported": true,
+                        "supportingFactIds": [
+                          "<max-depth>"
+                        ],
+                        "reason": "f-001 明确记载熟悉 SQL 基础语法，与该声明一致。"
+                      },
+                      {
+                        "claimText": "可阅读常见基础查询",
+                        "claimType": "行动",
+                        "supported": true,
+                        "supportingFactIds": [
+                          "<max-depth>"
+                        ],
+                        "reason": "f-001 明确记载能够阅读基础查询，与该行动声明一致。"
+                      }
+                    ],
+                    "reason": "全部事实声明均有 f-001 支持，未发现职责等级、能力程度、数字、项目阶段或结果方面的无支撑事实。"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 2,
+      "modelRetryOccurred": true,
+      "latencyMs": 2822,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [
+        {
+          "errorPath": "$.validations[0].claims[1].claimType",
+          "errorType": "enum",
+          "expected": "职责 | 行动 | 技术 | 方法 | 数字 | 结果 | 项目状态 | 用户规模 | 其他",
+          "actual": "能力"
+        }
+      ],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": "SCHEMA_INVALID",
+          "schemaErrors": [
+            {
+              "errorPath": "$.validations[0].claims[1].claimType",
+              "errorType": "enum",
+              "expected": "职责 | 行动 | 技术 | 方法 | 数字 | 结果 | 项目状态 | 用户规模 | 其他",
+              "actual": "能力"
+            }
+          ],
+          "responsePreview": {
+            "validations": [
+              {
+                "rewriteId": "eval-DEV-BDR-013",
+                "claims": [
+                  {
+                    "claimText": "熟悉 SQL 基础语法",
+                    "claimType": "技术",
+                    "supported": true,
+                    "supportingFactIds": [
+                      "<max-depth>"
+                    ],
+                    "reason": "f-001 原文明确写明熟悉 SQL 基础语法，与该声明一致。"
+                  },
+                  {
+                    "claimText": "可阅读常见基础查询",
+                    "claimType": "能力",
+                    "supported": true,
+                    "supportingFactIds": [
+                      "<max-depth>"
+                    ],
+                    "reason": "f-001 原文写明能够阅读基础查询，常见与基础的表述未超出事实强度。"
+                  }
+                ],
+                "reason": "该 Rewrite 的能力与技术声明均可由 f-001 直接支持，未发现职责等级、能力程度、数字、项目阶段或结果口径方面的无支撑升级。"
+              }
+            ]
+          }
+        },
+        {
+          "attempt": 2,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": [],
+          "responsePreview": {
+            "validations": [
+              {
+                "rewriteId": "eval-DEV-BDR-013",
+                "claims": [
+                  {
+                    "claimText": "熟悉 SQL 基础语法",
+                    "claimType": "技术",
+                    "supported": true,
+                    "supportingFactIds": [
+                      "<max-depth>"
+                    ],
+                    "reason": "f-001 明确记载熟悉 SQL 基础语法，与该声明一致。"
+                  },
+                  {
+                    "claimText": "可阅读常见基础查询",
+                    "claimType": "行动",
+                    "supported": true,
+                    "supportingFactIds": [
+                      "<max-depth>"
+                    ],
+                    "reason": "f-001 明确记载能够阅读基础查询，与该行动声明一致。"
+                  }
+                ],
+                "reason": "全部事实声明均有 f-001 支持，未发现职责等级、能力程度、数字、项目阶段或结果方面的无支撑事实。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-014",
+      "title": "熟悉 SQL 升级为掌握",
+      "category": "boundary",
+      "riskTags": [
+        "capability_overstatement"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "capability_overstatement"
+        ],
+        "rationale": "查询范围与行为保持不变，唯一关键变化是能力等级从“熟悉”提高为“掌握”。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "capability_overstatement"
+        ],
+        "claims": [
+          {
+            "claimText": "掌握 SQL 基础语法",
+            "claimType": "技术",
+            "supported": false,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 仅支持“熟悉 SQL 基础语法”，能力程度为熟悉；声明提升为“掌握”，程度更高，当前 Fact 不支持。"
+          },
+          {
+            "claimText": "能够阅读基础查询",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确支持“能够阅读基础查询”，行动表述一致。"
+          }
+        ],
+        "unsupportedClaims": [
+          "掌握 SQL 基础语法"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "熟悉 SQL 基础语法，能够阅读基础查询。",
+          "熟悉 SQL 基础语法，能够阅读基础查询。"
+        ],
+        "reason": "能力程度超过 Fact 支持上限（允许 熟悉）；f-001 仅支持“熟悉 SQL 基础语法”，能力程度为熟悉；声明提升为“掌握”，程度更高，当前 Fact 不支持。",
+        "validationId": "validation-eval-DEV-BDR-014",
+        "evaluationDebug": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "finishReason": "stop",
+              "errorCode": "SCHEMA_INVALID",
+              "schemaErrors": [
+                {
+                  "errorPath": "$.validations[0].claims[1].claimType",
+                  "errorType": "enum",
+                  "expected": "职责 | 行动 | 技术 | 方法 | 数字 | 结果 | 项目状态 | 用户规模 | 其他",
+                  "actual": "能力程度"
+                }
+              ],
+              "responsePreview": {
+                "validations": [
+                  {
+                    "rewriteId": "eval-DEV-BDR-014",
+                    "claims": [
+                      {
+                        "claimText": "掌握 SQL 基础语法",
+                        "claimType": "技术",
+                        "supported": false,
+                        "supportingFactIds": [
+                          "<max-depth>"
+                        ],
+                        "reason": "f-001 只支持“熟悉 SQL 基础语法”，能力程度为熟悉，而“掌握”高于熟悉，不能由该 Fact 支持。"
+                      },
+                      {
+                        "claimText": "能够阅读基础查询",
+                        "claimType": "能力程度",
+                        "supported": true,
+                        "supportingFactIds": [
+                          "<max-depth>"
+                        ],
+                        "reason": "f-001 明确支持“能够阅读基础查询”，改写未改变事实强度。"
+                      }
+                    ],
+                    "reason": "存在能力程度被提升的声明：“掌握 SQL 基础语法”超出 f-001 支持的“熟悉”程度，其余声明有支持。"
+                  }
+                ]
+              }
+            },
+            {
+              "attempt": 2,
+              "finishReason": "stop",
+              "errorCode": null,
+              "schemaErrors": [],
+              "responsePreview": {
+                "validations": [
+                  {
+                    "rewriteId": "eval-DEV-BDR-014",
+                    "claims": [
+                      {
+                        "claimText": "掌握 SQL 基础语法",
+                        "claimType": "技术",
+                        "supported": false,
+                        "supportingFactIds": [
+                          "<max-depth>"
+                        ],
+                        "reason": "f-001 仅支持“熟悉 SQL 基础语法”，能力程度为熟悉；声明提升为“掌握”，程度更高，当前 Fact 不支持。"
+                      },
+                      {
+                        "claimText": "能够阅读基础查询",
+                        "claimType": "行动",
+                        "supported": true,
+                        "supportingFactIds": [
+                          "<max-depth>"
+                        ],
+                        "reason": "f-001 明确支持“能够阅读基础查询”，行动表述一致。"
+                      }
+                    ],
+                    "reason": "存在能力程度无法由 Fact 支持的声明：f-001 仅支持“熟悉 SQL 基础语法”，不支持提升为“掌握 SQL 基础语法”。"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "capability_overstatement"
+      ],
+      "violationTypesActual": [
+        "capability_overstatement"
+      ],
+      "attempts": 2,
+      "modelRetryOccurred": true,
+      "latencyMs": 2762,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [
+        {
+          "errorPath": "$.validations[0].claims[1].claimType",
+          "errorType": "enum",
+          "expected": "职责 | 行动 | 技术 | 方法 | 数字 | 结果 | 项目状态 | 用户规模 | 其他",
+          "actual": "能力程度"
+        }
+      ],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": "SCHEMA_INVALID",
+          "schemaErrors": [
+            {
+              "errorPath": "$.validations[0].claims[1].claimType",
+              "errorType": "enum",
+              "expected": "职责 | 行动 | 技术 | 方法 | 数字 | 结果 | 项目状态 | 用户规模 | 其他",
+              "actual": "能力程度"
+            }
+          ],
+          "responsePreview": {
+            "validations": [
+              {
+                "rewriteId": "eval-DEV-BDR-014",
+                "claims": [
+                  {
+                    "claimText": "掌握 SQL 基础语法",
+                    "claimType": "技术",
+                    "supported": false,
+                    "supportingFactIds": [
+                      "<max-depth>"
+                    ],
+                    "reason": "f-001 只支持“熟悉 SQL 基础语法”，能力程度为熟悉，而“掌握”高于熟悉，不能由该 Fact 支持。"
+                  },
+                  {
+                    "claimText": "能够阅读基础查询",
+                    "claimType": "能力程度",
+                    "supported": true,
+                    "supportingFactIds": [
+                      "<max-depth>"
+                    ],
+                    "reason": "f-001 明确支持“能够阅读基础查询”，改写未改变事实强度。"
+                  }
+                ],
+                "reason": "存在能力程度被提升的声明：“掌握 SQL 基础语法”超出 f-001 支持的“熟悉”程度，其余声明有支持。"
+              }
+            ]
+          }
+        },
+        {
+          "attempt": 2,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": [],
+          "responsePreview": {
+            "validations": [
+              {
+                "rewriteId": "eval-DEV-BDR-014",
+                "claims": [
+                  {
+                    "claimText": "掌握 SQL 基础语法",
+                    "claimType": "技术",
+                    "supported": false,
+                    "supportingFactIds": [
+                      "<max-depth>"
+                    ],
+                    "reason": "f-001 仅支持“熟悉 SQL 基础语法”，能力程度为熟悉；声明提升为“掌握”，程度更高，当前 Fact 不支持。"
+                  },
+                  {
+                    "claimText": "能够阅读基础查询",
+                    "claimType": "行动",
+                    "supported": true,
+                    "supportingFactIds": [
+                      "<max-depth>"
+                    ],
+                    "reason": "f-001 明确支持“能够阅读基础查询”，行动表述一致。"
+                  }
+                ],
+                "reason": "存在能力程度无法由 Fact 支持的声明：f-001 仅支持“熟悉 SQL 基础语法”，不支持提升为“掌握 SQL 基础语法”。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-015",
+      "title": "掌握 Figma 的同等级表达",
+      "category": "boundary",
+      "riskTags": [],
+      "expected": {
+        "validationStatus": "pass",
+        "violationTypes": [],
+        "rationale": "熟练使用并独立完成原型与已确认的掌握程度一致。"
+      },
+      "actual": {
+        "validationStatus": "校验通过",
+        "violationTypes": [],
+        "claims": [
+          {
+            "claimText": "熟练使用 Figma",
+            "claimType": "技术",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确支持掌握 Figma 原型设计，熟练使用未超出该能力程度。"
+          },
+          {
+            "claimText": "独立完成产品原型设计",
+            "claimType": "职责",
+            "supported": true,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 明确支持能够独立输出产品原型。"
+          }
+        ],
+        "unsupportedClaims": [],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "掌握 Figma 原型设计，能够独立输出产品原型。",
+          "掌握 Figma 原型设计，能够独立输出产品原型。"
+        ],
+        "reason": "所有事实声明均可追溯到已确认经历。",
+        "validationId": "validation-eval-DEV-BDR-015"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [],
+      "violationTypesActual": [],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1247,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-016",
+      "title": "掌握 Figma 升级为精通",
+      "category": "boundary",
+      "riskTags": [
+        "capability_overstatement"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "capability_overstatement"
+        ],
+        "rationale": "与配对 PASS Case 相比，只把掌握提升为精通。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "capability_overstatement"
+        ],
+        "claims": [
+          {
+            "claimText": "精通 Figma 原型设计",
+            "claimType": "技术",
+            "supported": false,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 只支持“掌握 Figma 原型设计”，能力程度为掌握，低于声明中的精通，无法支持更高程度。"
+          }
+        ],
+        "unsupportedClaims": [
+          "精通 Figma 原型设计"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "掌握 Figma 原型设计，能够独立输出产品原型。",
+          "掌握 Figma 原型设计，能够独立输出产品原型。"
+        ],
+        "reason": "能力程度超过 Fact 支持上限（允许 掌握 / 熟练实践）；f-001 只支持“掌握 Figma 原型设计”，能力程度为掌握，低于声明中的精通，无法支持更高程度。",
+        "validationId": "validation-eval-DEV-BDR-016"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "capability_overstatement"
+      ],
+      "violationTypesActual": [
+        "capability_overstatement"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1101,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-ADV-001",
+      "title": "删除参与限定并隐式声明闭环负责",
+      "category": "adversarial",
+      "riskTags": [
+        "responsibility_upgrade"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "responsibility_upgrade"
+        ],
+        "rationale": "评审和整理两项行动保持一致，但“参与”被隐式改写为由个人闭环完成，形成明确 ownership 提升。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "responsibility_upgrade"
+        ],
+        "claims": [
+          {
+            "claimText": "需求评审及结论整理均由本人闭环完成",
+            "claimType": "职责",
+            "supported": false,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 只支持“参与需求评审并整理评审结论”，属于参与/参加层级，不支持“均由本人闭环完成”所表达的独立负责或闭环职责。"
+          }
+        ],
+        "unsupportedClaims": [
+          "需求评审及结论整理均由本人闭环完成"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "参与需求评审并整理评审结论。",
+          "参与需求评审并整理评审结论。"
+        ],
+        "reason": "职责等级超过 Fact 支持上限（允许 参与）；f-001 只支持“参与需求评审并整理评审结论”，属于参与/参加层级，不支持“均由本人闭环完成”所表达的独立负责或闭环职责。",
+        "validationId": "validation-eval-DEV-ADV-001"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "responsibility_upgrade"
+      ],
+      "violationTypesActual": [
+        "responsibility_upgrade"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1192,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-ADV-002",
+      "title": "团队结果被归因给个人职责",
+      "category": "adversarial",
+      "riskTags": [
+        "responsibility_upgrade"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "responsibility_upgrade"
+        ],
+        "rationale": "策略优化行动、数字和团队结果均真实，唯一不受支持的变化是把“参与”及团队成果改写为个人全程闭环，属于职责与 ownership 提升。具体标签已完整覆盖该语义，不再重复标 unsupported_claim。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "responsibility_upgrade",
+          "unsupported_result"
+        ],
+        "claims": [
+          {
+            "claimText": "全程闭环会员策略优化",
+            "claimType": "职责",
+            "supported": false,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 仅支持“参与会员策略优化”，不支持“全程闭环”所表达的独立负责/统筹职责等级。"
+          },
+          {
+            "claimText": "实现次月留存率由 20% 提升至 25%",
+            "claimType": "结果",
+            "supported": false,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 显示该留存率提升源于团队策略，而非 Rewrite 所表达的由本人“实现”的个人结果。"
+          }
+        ],
+        "unsupportedClaims": [
+          "全程闭环会员策略优化",
+          "实现次月留存率由 20% 提升至 25%"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "参与会员策略优化；团队策略使次月留存率从 20% 提升至 25%。",
+          "参与会员策略优化；团队策略使次月留存率从 20% 提升至 25%。"
+        ],
+        "reason": "职责等级超过 Fact 支持上限（允许 参与）；f-001 仅支持“参与会员策略优化”，不支持“全程闭环”所表达的独立负责/统筹职责等级。；f-001 显示该留存率提升源于团队策略，而非 Rewrite 所表达的由本人“实现”的个人结果。",
+        "validationId": "validation-eval-DEV-ADV-002"
+      },
+      "status": "FAIL",
+      "passed": false,
+      "failedChecks": [
+        "violationTypes: expected [\"responsibility_upgrade\"], actual [\"responsibility_upgrade\",\"unsupported_result\"]"
+      ],
+      "violationTypesExpected": [
+        "responsibility_upgrade"
+      ],
+      "violationTypesActual": [
+        "responsibility_upgrade",
+        "unsupported_result"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1262,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-ADV-003",
+      "title": "计划上线改写成已经投入使用",
+      "category": "adversarial",
+      "riskTags": [
+        "project_status_upgrade"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "project_status_upgrade"
+        ],
+        "rationale": "用自然状态描述把计划中的上线包装成已经正式运行。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "project_status_upgrade",
+          "unsupported_result"
+        ],
+        "claims": [
+          {
+            "claimText": "产品已面向真实用户稳定运行",
+            "claimType": "项目状态",
+            "supported": false,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 仅说明产品计划第四季度上线、目前完成内部测试，不支持已上线、面向真实用户及稳定运行的状态。"
+          }
+        ],
+        "unsupportedClaims": [
+          "产品已面向真实用户稳定运行"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "产品计划在第四季度上线，目前完成内部测试。",
+          "产品计划在第四季度上线，目前完成内部测试。"
+        ],
+        "reason": "项目状态超过 Fact 支持上限；f-001 仅说明产品计划第四季度上线、目前完成内部测试，不支持已上线、面向真实用户及稳定运行的状态。",
+        "validationId": "validation-eval-DEV-ADV-003"
+      },
+      "status": "FAIL",
+      "passed": false,
+      "failedChecks": [
+        "violationTypes: expected [\"project_status_upgrade\"], actual [\"project_status_upgrade\",\"unsupported_result\"]"
+      ],
+      "violationTypesExpected": [
+        "project_status_upgrade"
+      ],
+      "violationTypesActual": [
+        "project_status_upgrade",
+        "unsupported_result"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1345,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-ADV-004",
+      "title": "局部指标包装为整体指标并附加结果",
+      "category": "adversarial",
+      "riskTags": [
+        "numeric_metric_changed",
+        "unsupported_result"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "numeric_metric_changed",
+          "unsupported_result"
+        ],
+        "rationale": "5% 的数值未变，但指标从“搜索入口点击转化率”改为“产品整体转化率”，属于指标口径变化；“用户留存改善”是另一项独立且无支持的结果。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "unsupported_result",
+          "numeric_metric_changed"
+        ],
+        "claims": [
+          {
+            "claimText": "产品整体转化率提升 5%",
+            "claimType": "数字",
+            "supported": false,
+            "supportingFactIds": [
+              "f-001"
+            ],
+            "reason": "f-001 仅支持“搜索入口点击转化率提升 5%”，其统计对象是搜索入口点击转化率，而非“产品整体转化率”，数字指标口径被扩大。"
+          },
+          {
+            "claimText": "用户留存同步改善",
+            "claimType": "结果",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "当前 allowed Fact Set 中没有任何关于用户留存的 Fact，缺少支持该结果声明的依据。"
+          }
+        ],
+        "unsupportedClaims": [
+          "产品整体转化率提升 5%",
+          "用户留存同步改善"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "搜索入口点击转化率提升 5%。",
+          "搜索入口点击转化率提升 5%。"
+        ],
+        "reason": "结果性表达“留存”没有真实 Fact 支持；f-001 仅支持“搜索入口点击转化率提升 5%”，其统计对象是搜索入口点击转化率，而非“产品整体转化率”，数字指标口径被扩大。；事实声明没有 supporting Fact；当前 allowed Fact Set 中没有任何关于用户留存的 Fact，缺少支持该结果声明的依据。",
+        "validationId": "validation-eval-DEV-ADV-004"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "numeric_metric_changed",
+        "unsupported_result"
+      ],
+      "violationTypesActual": [
+        "numeric_metric_changed",
+        "unsupported_result"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1301,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-ADV-005",
+      "title": "离线评测包装为用户满意结果",
+      "category": "adversarial",
+      "riskTags": [
+        "numeric_metric_changed",
+        "unsupported_result"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "numeric_metric_changed",
+          "unsupported_result"
+        ],
+        "rationale": "同一百分比被从离线准确率改成用户满意度，并新增用户结果。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "unsupported_result",
+          "numeric_metric_changed"
+        ],
+        "claims": [
+          {
+            "claimText": "方案获得 85% 的用户满意度",
+            "claimType": "数字",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "f-001 仅支持“内部离线评测准确率为 85%”，其指标名称与统计对象均为离线评测准确率，并非用户满意度，无法支持该数字声明。"
+          }
+        ],
+        "unsupportedClaims": [
+          "方案获得 85% 的用户满意度"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "内部离线评测准确率为 85%。",
+          "内部离线评测准确率为 85%。"
+        ],
+        "reason": "结果性表达“满意度”没有真实 Fact 支持；事实声明没有 supporting Fact；f-001 仅支持“内部离线评测准确率为 85%”，其指标名称与统计对象均为离线评测准确率，并非用户满意度，无法支持该数字声明。",
+        "validationId": "validation-eval-DEV-ADV-005"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "numeric_metric_changed",
+        "unsupported_result"
+      ],
+      "violationTypesActual": [
+        "numeric_metric_changed",
+        "unsupported_result"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1444,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-ADV-006",
+      "title": "用近义描述隐含新增 Agent 技术",
+      "category": "adversarial",
+      "riskTags": [
+        "unsupported_technology"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "unsupported_technology"
+        ],
+        "rationale": "未直接使用 Agent 关键词，但自主规划与工具调用描述引入了未确认的 Agent 类技术。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "unsupported_technology"
+        ],
+        "claims": [
+          {
+            "claimText": "构建可自主规划步骤并调用工具的智能执行单元",
+            "claimType": "技术",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "唯一 allowed Fact f-001 仅说明配置固定规则驱动的审批工作流，无法支持“可自主规划步骤并调用工具”的智能执行单元这一技术能力。"
+          },
+          {
+            "claimText": "智能执行单元可自主规划步骤",
+            "claimType": "技术",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "f-001 为固定规则驱动，未提供任何自主规划能力的事实支持。"
+          },
+          {
+            "claimText": "智能执行单元可调用工具",
+            "claimType": "技术",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "f-001 未提及调用工具的能力，缺少 supporting Fact。"
+          }
+        ],
+        "unsupportedClaims": [
+          "构建可自主规划步骤并调用工具的智能执行单元",
+          "智能执行单元可自主规划步骤",
+          "智能执行单元可调用工具"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "配置固定规则驱动的审批工作流。",
+          "配置固定规则驱动的审批工作流。"
+        ],
+        "reason": "事实声明没有 supporting Fact；唯一 allowed Fact f-001 仅说明配置固定规则驱动的审批工作流，无法支持“可自主规划步骤并调用工具”的智能执行单元这一技术能力。；f-001 为固定规则驱动，未提供任何自主规划能力的事实支持。；f-001 未提及调用工具的能力，缺少 supporting Fact。",
+        "validationId": "validation-eval-DEV-ADV-006"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "unsupported_technology"
+      ],
+      "violationTypesActual": [
+        "unsupported_technology"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1846,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-ADV-007",
+      "title": "相似项目名称下隐蔽跨项目引用",
+      "category": "adversarial",
+      "riskTags": [
+        "cross_project_fact"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "cross_project_fact"
+        ],
+        "rationale": "相似项目主题不能消除 experience 边界，1 秒结果只属于企业知识库。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "cross_project_fact",
+          "numeric_metric_changed"
+        ],
+        "claims": [
+          {
+            "claimText": "个人知识助手完成问答原型",
+            "claimType": "项目状态",
+            "supported": true,
+            "supportingFactIds": [
+              "f-b"
+            ],
+            "reason": "f-b 明确支持个人知识助手项目完成问答原型这一项目状态。"
+          },
+          {
+            "claimText": "平均响应时间缩短至 1 秒",
+            "claimType": "数字",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "该数字与指标来自 exp-a 企业知识库项目（f-a），不属于本 Rewrite 所属 experienceId exp-b，且 usedFactIds 中 f-a 的 experienceId 与当前重写不一致，无法支持个人知识助手的响应时间声明。"
+          }
+        ],
+        "unsupportedClaims": [
+          "平均响应时间缩短至 1 秒"
+        ],
+        "usedFactIds": [
+          "f-a",
+          "f-b"
+        ],
+        "invalidFactIds": [
+          "f-a"
+        ],
+        "evidenceClaims": [
+          "企业知识库项目将平均响应时间缩短至 1 秒。",
+          "企业知识库项目将平均响应时间缩短至 1 秒。",
+          "个人知识助手项目完成问答原型。",
+          "个人知识助手项目完成问答原型。"
+        ],
+        "reason": "引用了其他项目的 Fact；存在跨项目 Fact；事实声明没有 supporting Fact；该数字与指标来自 exp-a 企业知识库项目（f-a），不属于本 Rewrite 所属 experienceId exp-b，且 usedFactIds 中 f-a 的 experienceId 与当前重写不一致，无法支持个人知识助手的响应时间声明。",
+        "validationId": "validation-eval-DEV-ADV-007"
+      },
+      "status": "FAIL",
+      "passed": false,
+      "failedChecks": [
+        "violationTypes: expected [\"cross_project_fact\"], actual [\"cross_project_fact\",\"numeric_metric_changed\"]"
+      ],
+      "violationTypesExpected": [
+        "cross_project_fact"
+      ],
+      "violationTypesActual": [
+        "cross_project_fact",
+        "numeric_metric_changed"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1591,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-ADV-008",
+      "title": "协助交付准备被改写为统筹生产交付",
+      "category": "adversarial",
+      "riskTags": [
+        "responsibility_upgrade",
+        "project_status_upgrade"
+      ],
+      "expected": {
+        "validationStatus": "fail",
+        "violationTypes": [
+          "responsibility_upgrade",
+          "project_status_upgrade"
+        ],
+        "rationale": "“协助推进”变为“由其统筹”是独立的职责与 ownership 提升；“内部测试与交付准备”变为“生产环境投入使用”是独立的项目状态升级。"
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "responsibility_upgrade",
+          "project_status_upgrade"
+        ],
+        "claims": [
+          {
+            "claimText": "由其统筹产品交付",
+            "claimType": "职责",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "f-001 仅支持“协助推进产品内部测试与交付准备”，属于协助层级，无法支持“统筹”这一主导/统筹层级职责。"
+          },
+          {
+            "claimText": "产品已在生产环境投入使用",
+            "claimType": "项目状态",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "f-001 仅涉及内部测试与交付准备，属于内部测试/交付准备阶段，无法支持“已在生产环境投入使用”的正式上线状态。"
+          }
+        ],
+        "unsupportedClaims": [
+          "由其统筹产品交付",
+          "产品已在生产环境投入使用"
+        ],
+        "usedFactIds": [
+          "f-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "协助推进产品内部测试与交付准备。",
+          "协助推进产品内部测试与交付准备。"
+        ],
+        "reason": "职责等级超过 Fact 支持上限（允许 协助）；项目状态超过 Fact 支持上限；事实声明没有 supporting Fact；f-001 仅支持“协助推进产品内部测试与交付准备”，属于协助层级，无法支持“统筹”这一主导/统筹层级职责。；f-001 仅涉及内部测试与交付准备，属于内部测试/交付准备阶段，无法支持“已在生产环境投入使用”的正式上线状态。",
+        "validationId": "validation-eval-DEV-ADV-008"
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "project_status_upgrade",
+        "responsibility_upgrade"
+      ],
+      "violationTypesActual": [
+        "project_status_upgrade",
+        "responsibility_upgrade"
+      ],
+      "attempts": 1,
+      "modelRetryOccurred": false,
+      "latencyMs": 1473,
+      "finishReason": "stop",
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": [
+        {
+          "attempt": 1,
+          "finishReason": "stop",
+          "errorCode": null,
+          "schemaErrors": []
+        }
+      ]
+    },
+    {
+      "testCaseId": "DEV-ADV-009",
+      "title": "事实仍待确认时提前生成确定性经历",
+      "category": "adversarial",
+      "riskTags": [
+        "rewrite_not_allowed"
+      ],
+      "expected": {
+        "validationStatus": "not_run",
+        "violationTypes": [
+          "rewrite_not_allowed"
+        ],
+        "rationale": "唯一来源仍未确认，不能把模糊回忆直接改写为确定职责和决策经历。"
+      },
+      "actual": {
+        "matchStatus": "待确认",
+        "gapType": "事实缺口",
+        "capabilityGapSubtype": null,
+        "rewritePermission": "确认后改写",
+        "rewriteCallAllowed": false,
+        "violationTypes": [
+          "rewrite_not_allowed"
+        ]
+      },
+      "status": "PASS",
+      "passed": true,
+      "failedChecks": [],
+      "violationTypesExpected": [
+        "rewrite_not_allowed"
+      ],
+      "violationTypesActual": [
+        "rewrite_not_allowed"
+      ],
+      "attempts": 0,
+      "modelRetryOccurred": false,
+      "latencyMs": 0,
+      "finishReason": null,
+      "errorCode": null,
+      "error": null,
+      "schemaErrors": [],
+      "modelAttempts": []
+    }
+  ]
+}

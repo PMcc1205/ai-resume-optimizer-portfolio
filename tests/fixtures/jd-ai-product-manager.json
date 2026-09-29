@@ -1,0 +1,39 @@
+{
+  "sampleId": "jd-ai-pm-regression-001",
+  "description": "根据真实解析验证过的语义整理的匿名化 AI 产品经理 JD；用于固定约 19 条 Requirement 的人工回归基准，不包含模型凭据。",
+  "jobTitle": "AI 产品经理",
+  "companyName": "匿名测试公司",
+  "expectedRequirementCount": { "min": 17, "target": 19, "max": 21 },
+  "rawJobDescription": "岗位职责：\n1. 洞察 AI 技术在用户场景中的增量价值并定义产品方向；完成需求定义、方案设计和效果验证；推动产品从概念到上线的完整闭环。\n2. 设计新型 AI 交互体验；持续优化产品体验并建立体验指标体系。\n3. 通过用户研究和场景分析识别真实需求，并转化为产品机会。\n4. 追踪留存、转化与满意度指标，通过实验和数据分析推动产品迭代。\n5. 推动算法、设计、研发和运营团队协作，保障产品落地。\n任职要求：\n1. 本科及以上学历，计算机、人工智能、心理学或相关专业。\n2. 具备 3 年以上互联网产品经验，有 AI 产品落地实践。\n3. 熟悉大语言模型（LLM）、Agent、RAG 与多模态的基本原理、能力边界和适用场景。\n4. 能够实际使用 AI 工具完成调研、原型或分析工作，并判断 AI 输出质量。\n5. 具备数据分析与 A/B 测试实践，能够基于数据验证产品价值。\n6. 具备优秀的产品 Sense、用户洞察和用户同理心。\n7. 具备良好的逻辑分析、沟通协作与跨团队推进能力。\n8. 具备技术敏感度及商业敏感度。\n9. 关注 AI 行业发展，对用 AI 创造用户价值有热情。\n加分项：\n1. 有从 0 到 1 的 AI 产品完整项目经验者优先。\n2. 有算法、工程或交互技术背景者优先考虑。",
+  "expectedRequirements": [
+    { "sourceText": "洞察 AI 技术在用户场景中的增量价值并定义产品方向", "normalizedRequirement": "洞察 AI 增量价值并定义产品方向", "category": "岗位职责", "importance": "核心要求", "requiredLevel": "L4 设计 / 主导" },
+    { "sourceText": "完成需求定义、方案设计和效果验证", "normalizedRequirement": "完成需求定义、方案设计与效果验证", "category": "岗位职责", "importance": "核心要求", "requiredLevel": "L4 设计 / 主导" },
+    { "sourceText": "推动产品从概念到上线的完整闭环", "normalizedRequirement": "推动产品从概念到上线的完整闭环", "category": "岗位职责", "importance": "核心要求", "requiredLevel": "L4 设计 / 主导" },
+    { "sourceText": "设计新型 AI 交互体验", "normalizedRequirement": "设计新型 AI 交互体验", "category": "岗位职责", "importance": "核心要求", "requiredLevel": "L4 设计 / 主导" },
+    { "sourceText": "持续优化产品体验并建立体验指标体系", "normalizedRequirement": "持续优化产品体验并建立体验指标体系", "category": "岗位职责", "importance": "核心要求", "requiredLevel": "L4 设计 / 主导" },
+    { "sourceText": "通过用户研究和场景分析识别真实需求，并转化为产品机会", "normalizedRequirement": "通过用户研究与场景分析识别产品机会", "category": "产品能力", "importance": "核心要求", "requiredLevel": "L3 实践" },
+    { "sourceText": "追踪留存、转化与满意度指标，通过实验和数据分析推动产品迭代", "normalizedRequirement": "通过指标、实验和数据分析推动产品迭代", "category": "岗位职责", "importance": "核心要求", "requiredLevel": "L3 实践" },
+    { "sourceText": "推动算法、设计、研发和运营团队协作，保障产品落地", "normalizedRequirement": "推动跨团队协作保障产品落地", "category": "岗位职责", "importance": "核心要求", "requiredLevel": "L3 实践" },
+    { "sourceText": "本科及以上学历，计算机、人工智能、心理学或相关专业", "normalizedRequirement": "本科及以上学历及相关专业背景", "category": "背景要求", "importance": "一般要求", "requiredLevel": "L1 了解" },
+    { "sourceText": "具备 3 年以上互联网产品经验，有 AI 产品落地实践", "normalizedRequirement": "具备互联网产品经验与 AI 产品落地实践", "category": "背景要求", "importance": "一般要求", "requiredLevel": "L3 实践" },
+    { "sourceText": "熟悉大语言模型（LLM）、Agent、RAG 与多模态的基本原理、能力边界和适用场景", "normalizedRequirement": "熟悉主流 AI 技术原理、能力边界与适用场景", "category": "AI 技术能力", "importance": "一般要求", "requiredLevel": "L2 熟悉" },
+    { "sourceText": "能够实际使用 AI 工具完成调研、原型或分析工作，并判断 AI 输出质量", "normalizedRequirement": "实际使用 AI 工具完成产品工作并判断输出质量", "category": "AI 技术能力", "importance": "一般要求", "requiredLevel": "L3 实践" },
+    { "sourceText": "具备数据分析与 A/B 测试实践，能够基于数据验证产品价值", "normalizedRequirement": "使用数据分析与 A/B 测试验证产品价值", "category": "专业技能", "importance": "一般要求", "requiredLevel": "L3 实践" },
+    { "sourceText": "具备优秀的产品 Sense、用户洞察和用户同理心", "normalizedRequirement": "具备产品 Sense、用户洞察与用户同理心", "category": "产品能力", "importance": "一般要求", "requiredLevel": "L2 熟悉" },
+    { "sourceText": "具备良好的逻辑分析、沟通协作与跨团队推进能力", "normalizedRequirement": "具备逻辑分析、沟通协作与跨团队推进能力", "category": "通用能力", "importance": "一般要求", "requiredLevel": "L2 熟悉" },
+    { "sourceText": "具备技术敏感度及商业敏感度", "normalizedRequirement": "具备技术敏感度及商业敏感度", "category": "通用能力", "importance": "一般要求", "requiredLevel": "L2 熟悉" },
+    { "sourceText": "关注 AI 行业发展，对用 AI 创造用户价值有热情", "normalizedRequirement": "关注 AI 行业并认同用 AI 创造用户价值", "category": "通用能力", "importance": "一般要求", "requiredLevel": "L1 了解" },
+    { "sourceText": "有从 0 到 1 的 AI 产品完整项目经验者优先", "normalizedRequirement": "具备从 0 到 1 的 AI 产品完整项目经验", "category": "加分项", "importance": "加分项", "requiredLevel": "L3 实践" },
+    { "sourceText": "有算法、工程或交互技术背景者优先考虑", "normalizedRequirement": "具备算法、工程或交互技术背景", "category": "加分项", "importance": "加分项", "requiredLevel": "L2 熟悉" }
+  ],
+  "focusRules": [
+    "LLM、Agent、RAG、多模态属于同一技术理解要求，不得机械拆成四条",
+    "技术敏感度及商业敏感度保留为同一条完整能力表达",
+    "定义方向、方案设计、建立指标、推动完整闭环应判断为 L4 设计 / 主导",
+    "实际使用、实验、数据分析和落地实践应判断为 L3 实践",
+    "熟悉原理、能力边界和适用场景应判断为 L2 熟悉",
+    "关注行业发展应判断为 L1 了解",
+    "只有原文带有优先或加分信号时才能输出加分项",
+    "每条 sourceText 必须能在原始 JD 中逐字追溯"
+  ]
+}

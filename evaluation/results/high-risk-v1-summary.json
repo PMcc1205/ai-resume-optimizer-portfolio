@@ -1,0 +1,144 @@
+{
+  "evaluationId": "high-risk-v1",
+  "generatedAt": "2026-09-19T12:25:00.146Z",
+  "totalCases": 12,
+  "executedCases": 9,
+  "passedCases": 9,
+  "failedCases": 0,
+  "executionErrors": 3,
+  "passRate": 1,
+  "byRiskTag": {
+    "改写_职责升级": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "executionErrors": 0
+    },
+    "校验_职责等级": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "executionErrors": 0
+    },
+    "改写_职责范围扩大": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "executionErrors": 0
+    },
+    "改写_项目状态升级": {
+      "total": 2,
+      "passed": 1,
+      "failed": 0,
+      "executionErrors": 1
+    },
+    "校验_项目阶段": {
+      "total": 2,
+      "passed": 1,
+      "failed": 0,
+      "executionErrors": 1
+    },
+    "改写_数字幻觉": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "executionErrors": 0
+    },
+    "改写_无依据结果": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "executionErrors": 0
+    },
+    "改写_数字改变": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "executionErrors": 0
+    },
+    "校验_数值一致性": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "executionErrors": 0
+    },
+    "改写_数字口径变化": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "executionErrors": 0
+    },
+    "校验_指标一致性": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "executionErrors": 0
+    },
+    "改写_跨项目": {
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "executionErrors": 1
+    },
+    "校验_事实边界": {
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "executionErrors": 1
+    },
+    "改写_技术虚构": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "executionErrors": 0
+    },
+    "改写_经历虚构": {
+      "total": 3,
+      "passed": 2,
+      "failed": 0,
+      "executionErrors": 1
+    },
+    "改写_方法虚构": {
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "executionErrors": 1
+    },
+    "缺口_能力缺失": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "executionErrors": 0
+    },
+    "改写_权限错误": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "executionErrors": 0
+    },
+    "匹配_等级不足": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "executionErrors": 0
+    },
+    "诊断_程度误判": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "executionErrors": 0
+    },
+    "改写_能力升级": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "executionErrors": 0
+    }
+  },
+  "failedTestCaseIds": [],
+  "executionErrorTestCaseIds": [
+    "HR-STAGE-002",
+    "HR-CROSS-001",
+    "HR-METHOD-001"
+  ]
+}

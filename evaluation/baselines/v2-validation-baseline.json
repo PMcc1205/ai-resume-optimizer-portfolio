@@ -1,0 +1,86 @@
+{
+  "baselineId": "V2 Validation Baseline",
+  "status": "frozen",
+  "frozenAt": "2026-09-20T12:12:58.075+08:00",
+  "evaluationRunAt": "2026-09-20T04:08:30.676Z",
+  "git": {
+    "repositoryDetected": false,
+    "commit": null,
+    "note": "当前工作目录不是 Git 仓库，使用下列 SHA-256 内容哈希作为版本锚点。"
+  },
+  "validationPrompt": {
+    "version": "validation-prompt-v2",
+    "source": "server/rewriteValidation.js#REWRITE_VALIDATION_PROMPT",
+    "sha256": "9db853074755a0301552281bb300a84ba4121a973fa3fe07fc4af9383e98fba5"
+  },
+  "validationSchema": {
+    "version": "validation-output-contract-v2",
+    "source": "server/rewriteValidation.js#REWRITE_VALIDATION_OUTPUT_CONTRACT",
+    "sha256": "ebcff2ca330c8a8b774b91d898591c33adbc6349de0b5d568e5d2280828afd60"
+  },
+  "evaluationRunner": {
+    "version": "evaluation-runner-v2",
+    "source": "evaluation/lib/runner-core.mjs",
+    "sha256": "524968c56b36d958f505d2496feb393604279e7294c8cfccd009f94b74acd575"
+  },
+  "model": {
+    "provider": "DeepSeek",
+    "model": "deepseek-chat",
+    "apiUrl": "https://api.deepseek.com/chat/completions",
+    "timeoutMs": 90000,
+    "maxRetries": 1,
+    "configuredMaxOutputTokens": null,
+    "effectiveMaxOutputTokens": 8192,
+    "mockFallback": false,
+    "secretRecorded": false
+  },
+  "caseSet": {
+    "version": "high-risk-v1",
+    "path": "evaluation/cases/high-risk-v1.jsonl",
+    "count": 12,
+    "sha256": "5c093b1fce158ba47995b176fcdc6ee37a0abb6730fdb878dea595412333c706",
+    "testCaseIds": [
+      "HR-DUTY-001",
+      "HR-DUTY-002",
+      "HR-STAGE-001",
+      "HR-STAGE-002",
+      "HR-NUM-001",
+      "HR-NUM-002",
+      "HR-NUM-003",
+      "HR-CROSS-001",
+      "HR-TECH-001",
+      "HR-METHOD-001",
+      "HR-ABSENCE-001",
+      "HR-CAPABILITY-001"
+    ]
+  },
+  "gold": {
+    "source": "evaluation/cases/high-risk-v1.jsonl#expected",
+    "sha256": "b83fd0e0f97fd0630f979b06c2f59c08912de80c8078d3b3dcd474252148ce3b",
+    "immutableAfterFreeze": true
+  },
+  "results": {
+    "totalCases": 12,
+    "passedCases": 12,
+    "failedCases": 0,
+    "executionErrors": 0,
+    "passRate": 1,
+    "schemaInvalid": 0,
+    "modelRetries": 0,
+    "resultsPath": "evaluation/results/high-risk-v2-results.json",
+    "resultsSha256": "3edea8b5a4a5bdb933c1f4a88dcd2c1dc17f09ffd8734e074c9e5ddf9bb52764",
+    "summaryPath": "evaluation/results/high-risk-v2-summary.json",
+    "summarySha256": "944bd2d2192fef5928a3b1fb9c32e21a0e930a7a1728c972d195c50ff61b0537"
+  },
+  "verification": {
+    "evaluationRunnerTests": "37 checks PASS",
+    "validationTests": "97 checks PASS",
+    "typecheck": "PASS",
+    "productionBuild": "PASS"
+  },
+  "freezePolicy": [
+    "现有 12 个 Core Regression Case、输入和 Gold 不因后续扩展集失败而修改。",
+    "后续 Prompt、Schema、Runner、模型配置或分类规则发生变化时，必须创建新 Baseline，不覆盖本文件。",
+    "扩展集发现的真实缺陷应新增回归案例；不得回写或重标旧 Gold 来提高通过率。"
+  ]
+}

@@ -1,0 +1,920 @@
+{
+  "evaluationId": "formal-eval-v1",
+  "datasetVersion": "automatic-evaluation-v1",
+  "generatedAt": "2026-09-20T05:09:55.852Z",
+  "totalCases": 61,
+  "executedCases": 61,
+  "passCases": 35,
+  "failCases": 26,
+  "errorCases": 0,
+  "executionSuccessRate": 1,
+  "casePassRate": 0.5737704918032787,
+  "rawPassRate": 0.5737704918032787,
+  "pendingHumanReview": 1,
+  "categories": {
+    "normal-clean": {
+      "total": 12,
+      "pass": 11,
+      "fail": 1,
+      "error": 0,
+      "passRate": 0.9166666666666666,
+      "falsePositiveCount": 1,
+      "falsePositiveRate": 0.08333333333333333
+    },
+    "single-risk": {
+      "total": 17,
+      "pass": 8,
+      "fail": 9,
+      "error": 0,
+      "passRate": 0.47058823529411764
+    },
+    "multi-risk": {
+      "total": 7,
+      "pass": 3,
+      "fail": 4,
+      "error": 0,
+      "passRate": 0.42857142857142855
+    },
+    "boundary": {
+      "total": 16,
+      "pass": 11,
+      "fail": 5,
+      "error": 0,
+      "passRate": 0.6875
+    },
+    "adversarial": {
+      "total": 9,
+      "pass": 2,
+      "fail": 7,
+      "error": 0,
+      "passRate": 0.2222222222222222
+    }
+  },
+  "clean": {
+    "total": 12,
+    "pass": 11,
+    "fail": 1,
+    "error": 0,
+    "passRate": 0.9166666666666666,
+    "falsePositiveCount": 1,
+    "falsePositiveRate": 0.08333333333333333
+  },
+  "singleRisk": {
+    "total": 17,
+    "pass": 8,
+    "fail": 9,
+    "error": 0,
+    "passRate": 0.47058823529411764,
+    "byViolationType": {
+      "unsupported_claim": {
+        "goldCount": 2,
+        "correctIdentificationCount": 0,
+        "missedCount": 2,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 0
+      },
+      "unsupported_number": {
+        "goldCount": 2,
+        "correctIdentificationCount": 2,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 1,
+        "errorCount": 0
+      },
+      "unsupported_result": {
+        "goldCount": 2,
+        "correctIdentificationCount": 1,
+        "missedCount": 1,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 0
+      },
+      "unsupported_technology": {
+        "goldCount": 2,
+        "correctIdentificationCount": 0,
+        "missedCount": 2,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 0
+      },
+      "unsupported_experiment": {
+        "goldCount": 2,
+        "correctIdentificationCount": 0,
+        "missedCount": 2,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 0
+      },
+      "numeric_value_changed": {
+        "goldCount": 1,
+        "correctIdentificationCount": 1,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 0
+      },
+      "numeric_metric_changed": {
+        "goldCount": 1,
+        "correctIdentificationCount": 1,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 0
+      },
+      "project_status_upgrade": {
+        "goldCount": 1,
+        "correctIdentificationCount": 1,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 0
+      },
+      "responsibility_upgrade": {
+        "goldCount": 1,
+        "correctIdentificationCount": 1,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 0
+      },
+      "capability_overstatement": {
+        "goldCount": 1,
+        "correctIdentificationCount": 0,
+        "missedCount": 1,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 0
+      },
+      "cross_project_fact": {
+        "goldCount": 1,
+        "correctIdentificationCount": 1,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 0
+      },
+      "rewrite_not_allowed": {
+        "goldCount": 1,
+        "correctIdentificationCount": 1,
+        "missedCount": 0,
+        "wrongClassificationCount": 0,
+        "extraClassificationCount": 0,
+        "errorCount": 0
+      }
+    }
+  },
+  "multiRisk": {
+    "total": 7,
+    "pass": 3,
+    "fail": 4,
+    "error": 0,
+    "passRate": 0.42857142857142855,
+    "exactMatchCount": 3,
+    "partialMatchCount": 4,
+    "completeMissCount": 0,
+    "errorCount": 0,
+    "cases": [
+      {
+        "testCaseId": "DEV-MLT-001",
+        "status": "PASS",
+        "matchStatus": "EXACT_MATCH",
+        "expectedViolationTypes": [
+          "numeric_value_changed",
+          "responsibility_upgrade"
+        ],
+        "actualViolationTypes": [
+          "numeric_value_changed",
+          "responsibility_upgrade"
+        ],
+        "missingTypes": [],
+        "extraTypes": []
+      },
+      {
+        "testCaseId": "DEV-MLT-002",
+        "status": "FAIL",
+        "matchStatus": "PARTIAL_MATCH",
+        "expectedViolationTypes": [
+          "project_status_upgrade",
+          "unsupported_claim"
+        ],
+        "actualViolationTypes": [
+          "project_status_upgrade"
+        ],
+        "missingTypes": [
+          "unsupported_claim"
+        ],
+        "extraTypes": []
+      },
+      {
+        "testCaseId": "DEV-MLT-003",
+        "status": "FAIL",
+        "matchStatus": "PARTIAL_MATCH",
+        "expectedViolationTypes": [
+          "unsupported_result",
+          "unsupported_technology"
+        ],
+        "actualViolationTypes": [
+          "unsupported_result"
+        ],
+        "missingTypes": [
+          "unsupported_technology"
+        ],
+        "extraTypes": []
+      },
+      {
+        "testCaseId": "DEV-MLT-004",
+        "status": "PASS",
+        "matchStatus": "EXACT_MATCH",
+        "expectedViolationTypes": [
+          "cross_project_fact",
+          "responsibility_upgrade"
+        ],
+        "actualViolationTypes": [
+          "cross_project_fact",
+          "responsibility_upgrade"
+        ],
+        "missingTypes": [],
+        "extraTypes": []
+      },
+      {
+        "testCaseId": "DEV-MLT-005",
+        "status": "FAIL",
+        "matchStatus": "PARTIAL_MATCH",
+        "expectedViolationTypes": [
+          "numeric_value_changed",
+          "unsupported_number",
+          "unsupported_result"
+        ],
+        "actualViolationTypes": [
+          "numeric_value_changed",
+          "unsupported_result"
+        ],
+        "missingTypes": [
+          "unsupported_number"
+        ],
+        "extraTypes": []
+      },
+      {
+        "testCaseId": "DEV-MLT-007",
+        "status": "PASS",
+        "matchStatus": "EXACT_MATCH",
+        "expectedViolationTypes": [
+          "project_status_upgrade",
+          "responsibility_upgrade",
+          "unsupported_number"
+        ],
+        "actualViolationTypes": [
+          "project_status_upgrade",
+          "responsibility_upgrade",
+          "unsupported_number"
+        ],
+        "missingTypes": [],
+        "extraTypes": []
+      },
+      {
+        "testCaseId": "DEV-MLT-008",
+        "status": "FAIL",
+        "matchStatus": "PARTIAL_MATCH",
+        "expectedViolationTypes": [
+          "cross_project_fact",
+          "unsupported_result",
+          "unsupported_technology"
+        ],
+        "actualViolationTypes": [
+          "cross_project_fact",
+          "unsupported_result"
+        ],
+        "missingTypes": [
+          "unsupported_technology"
+        ],
+        "extraTypes": []
+      }
+    ]
+  },
+  "boundary": {
+    "total": 16,
+    "pass": 11,
+    "fail": 5,
+    "error": 0,
+    "passRate": 0.6875
+  },
+  "adversarial": {
+    "total": 9,
+    "pass": 2,
+    "fail": 7,
+    "error": 0,
+    "passRate": 0.2222222222222222
+  },
+  "violationTypeMetrics": {
+    "capability_overstatement": {
+      "goldCount": 3,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "precision": null,
+      "recall": 0,
+      "f1": null
+    },
+    "cross_project_fact": {
+      "goldCount": 4,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1
+    },
+    "numeric_metric_changed": {
+      "goldCount": 3,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1,
+      "recall": 0.3333333333333333,
+      "f1": 0.5
+    },
+    "numeric_value_changed": {
+      "goldCount": 3,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1
+    },
+    "project_status_upgrade": {
+      "goldCount": 7,
+      "tp": 5,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1,
+      "recall": 0.7142857142857143,
+      "f1": 0.8333333333333333
+    },
+    "responsibility_scope_expanded": {
+      "goldCount": 1,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1
+    },
+    "responsibility_upgrade": {
+      "goldCount": 10,
+      "tp": 7,
+      "fp": 3,
+      "fn": 3,
+      "precision": 0.7,
+      "recall": 0.7,
+      "f1": 0.7
+    },
+    "rewrite_not_allowed": {
+      "goldCount": 2,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1
+    },
+    "unsupported_claim": {
+      "goldCount": 3,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "precision": null,
+      "recall": 0,
+      "f1": null
+    },
+    "unsupported_experiment": {
+      "goldCount": 2,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": null,
+      "recall": 0,
+      "f1": null
+    },
+    "unsupported_number": {
+      "goldCount": 4,
+      "tp": 3,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1,
+      "recall": 0.75,
+      "f1": 0.8571428571428571
+    },
+    "unsupported_result": {
+      "goldCount": 7,
+      "tp": 6,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1,
+      "recall": 0.8571428571428571,
+      "f1": 0.923076923076923
+    },
+    "unsupported_technology": {
+      "goldCount": 5,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "precision": null,
+      "recall": 0,
+      "f1": null
+    }
+  },
+  "failures": [
+    {
+      "testCaseId": "DEV-CLN-004",
+      "category": "normal-clean",
+      "failureType": "OVER_BLOCKING",
+      "expectedViolationTypes": [],
+      "actualViolationTypes": [
+        "responsibility_upgrade"
+      ],
+      "missingTypes": [],
+      "extraTypes": [
+        "responsibility_upgrade"
+      ],
+      "failedChecks": [
+        "expectedValidationStatus: expected \"校验通过\", actual \"校验不通过\"",
+        "violationTypes: expected [], actual [\"responsibility_upgrade\"]"
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-001",
+      "category": "single-risk",
+      "failureType": "MISSED_RISK",
+      "expectedViolationTypes": [
+        "unsupported_claim"
+      ],
+      "actualViolationTypes": [],
+      "missingTypes": [
+        "unsupported_claim"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"unsupported_claim\"], actual []"
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-002",
+      "category": "single-risk",
+      "failureType": "MISSED_RISK",
+      "expectedViolationTypes": [
+        "unsupported_claim"
+      ],
+      "actualViolationTypes": [],
+      "missingTypes": [
+        "unsupported_claim"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"unsupported_claim\"], actual []"
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-004",
+      "category": "single-risk",
+      "failureType": "WRONG_VIOLATION_TYPE",
+      "expectedViolationTypes": [
+        "unsupported_number"
+      ],
+      "actualViolationTypes": [
+        "responsibility_upgrade",
+        "unsupported_number"
+      ],
+      "missingTypes": [],
+      "extraTypes": [
+        "responsibility_upgrade"
+      ],
+      "failedChecks": [
+        "violationTypes: expected [\"unsupported_number\"], actual [\"responsibility_upgrade\",\"unsupported_number\"]"
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-005",
+      "category": "single-risk",
+      "failureType": "MISSED_RISK",
+      "expectedViolationTypes": [
+        "unsupported_result"
+      ],
+      "actualViolationTypes": [],
+      "missingTypes": [
+        "unsupported_result"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"unsupported_result\"], actual []"
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-007",
+      "category": "single-risk",
+      "failureType": "MISSED_RISK",
+      "expectedViolationTypes": [
+        "unsupported_technology"
+      ],
+      "actualViolationTypes": [],
+      "missingTypes": [
+        "unsupported_technology"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"unsupported_technology\"], actual []"
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-008",
+      "category": "single-risk",
+      "failureType": "MISSED_RISK",
+      "expectedViolationTypes": [
+        "unsupported_technology"
+      ],
+      "actualViolationTypes": [],
+      "missingTypes": [
+        "unsupported_technology"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"unsupported_technology\"], actual []"
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-009",
+      "category": "single-risk",
+      "failureType": "MISSED_RISK",
+      "expectedViolationTypes": [
+        "unsupported_experiment"
+      ],
+      "actualViolationTypes": [],
+      "missingTypes": [
+        "unsupported_experiment"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"unsupported_experiment\"], actual []"
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-010",
+      "category": "single-risk",
+      "failureType": "MISSED_RISK",
+      "expectedViolationTypes": [
+        "unsupported_experiment"
+      ],
+      "actualViolationTypes": [],
+      "missingTypes": [
+        "unsupported_experiment"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"unsupported_experiment\"], actual []"
+      ]
+    },
+    {
+      "testCaseId": "DEV-SNG-016",
+      "category": "single-risk",
+      "failureType": "CAPABILITY_LEVEL_ERROR",
+      "expectedViolationTypes": [
+        "capability_overstatement"
+      ],
+      "actualViolationTypes": [],
+      "missingTypes": [
+        "capability_overstatement"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"capability_overstatement\"], actual []"
+      ]
+    },
+    {
+      "testCaseId": "DEV-MLT-002",
+      "category": "multi-risk",
+      "failureType": "PARTIAL_MULTI_RISK",
+      "expectedViolationTypes": [
+        "project_status_upgrade",
+        "unsupported_claim"
+      ],
+      "actualViolationTypes": [
+        "project_status_upgrade"
+      ],
+      "missingTypes": [
+        "unsupported_claim"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"project_status_upgrade\",\"unsupported_claim\"], actual [\"project_status_upgrade\"]"
+      ]
+    },
+    {
+      "testCaseId": "DEV-MLT-003",
+      "category": "multi-risk",
+      "failureType": "PARTIAL_MULTI_RISK",
+      "expectedViolationTypes": [
+        "unsupported_result",
+        "unsupported_technology"
+      ],
+      "actualViolationTypes": [
+        "unsupported_result"
+      ],
+      "missingTypes": [
+        "unsupported_technology"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"unsupported_result\",\"unsupported_technology\"], actual [\"unsupported_result\"]"
+      ]
+    },
+    {
+      "testCaseId": "DEV-MLT-005",
+      "category": "multi-risk",
+      "failureType": "PARTIAL_MULTI_RISK",
+      "expectedViolationTypes": [
+        "numeric_value_changed",
+        "unsupported_number",
+        "unsupported_result"
+      ],
+      "actualViolationTypes": [
+        "numeric_value_changed",
+        "unsupported_result"
+      ],
+      "missingTypes": [
+        "unsupported_number"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"numeric_value_changed\",\"unsupported_number\",\"unsupported_result\"], actual [\"numeric_value_changed\",\"unsupported_result\"]"
+      ]
+    },
+    {
+      "testCaseId": "DEV-MLT-008",
+      "category": "multi-risk",
+      "failureType": "PARTIAL_MULTI_RISK",
+      "expectedViolationTypes": [
+        "cross_project_fact",
+        "unsupported_result",
+        "unsupported_technology"
+      ],
+      "actualViolationTypes": [
+        "cross_project_fact",
+        "unsupported_result"
+      ],
+      "missingTypes": [
+        "unsupported_technology"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"cross_project_fact\",\"unsupported_result\",\"unsupported_technology\"], actual [\"cross_project_fact\",\"unsupported_result\"]"
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-001",
+      "category": "boundary",
+      "failureType": "OTHER",
+      "expectedViolationTypes": [],
+      "actualViolationTypes": [],
+      "missingTypes": [],
+      "extraTypes": [],
+      "failedChecks": [
+        "expectedValidationStatus: expected \"校验通过\", actual \"校验不通过\""
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-012",
+      "category": "boundary",
+      "failureType": "MISSED_RISK",
+      "expectedViolationTypes": [
+        "project_status_upgrade"
+      ],
+      "actualViolationTypes": [],
+      "missingTypes": [
+        "project_status_upgrade"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"project_status_upgrade\"], actual []"
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-014",
+      "category": "boundary",
+      "failureType": "CAPABILITY_LEVEL_ERROR",
+      "expectedViolationTypes": [
+        "capability_overstatement"
+      ],
+      "actualViolationTypes": [],
+      "missingTypes": [
+        "capability_overstatement"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "expectedValidationStatus: expected \"校验不通过\", actual \"校验通过\"",
+        "violationTypes: expected [\"capability_overstatement\"], actual []"
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-015",
+      "category": "boundary",
+      "failureType": "WRONG_VIOLATION_TYPE",
+      "expectedViolationTypes": [],
+      "actualViolationTypes": [
+        "responsibility_upgrade"
+      ],
+      "missingTypes": [],
+      "extraTypes": [
+        "responsibility_upgrade"
+      ],
+      "failedChecks": [
+        "expectedValidationStatus: expected \"校验通过\", actual \"校验不通过\"",
+        "violationTypes: expected [], actual [\"responsibility_upgrade\"]"
+      ]
+    },
+    {
+      "testCaseId": "DEV-BDR-016",
+      "category": "boundary",
+      "failureType": "CAPABILITY_LEVEL_ERROR",
+      "expectedViolationTypes": [
+        "capability_overstatement"
+      ],
+      "actualViolationTypes": [],
+      "missingTypes": [
+        "capability_overstatement"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"capability_overstatement\"], actual []"
+      ]
+    },
+    {
+      "testCaseId": "DEV-ADV-001",
+      "category": "adversarial",
+      "failureType": "RESPONSIBILITY_REASONING_ERROR",
+      "expectedViolationTypes": [
+        "responsibility_upgrade"
+      ],
+      "actualViolationTypes": [],
+      "missingTypes": [
+        "responsibility_upgrade"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"responsibility_upgrade\"], actual []"
+      ]
+    },
+    {
+      "testCaseId": "DEV-ADV-002",
+      "category": "adversarial",
+      "failureType": "RESPONSIBILITY_REASONING_ERROR",
+      "expectedViolationTypes": [
+        "responsibility_upgrade"
+      ],
+      "actualViolationTypes": [],
+      "missingTypes": [
+        "responsibility_upgrade"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"responsibility_upgrade\"], actual []"
+      ]
+    },
+    {
+      "testCaseId": "DEV-ADV-003",
+      "category": "adversarial",
+      "failureType": "MISSED_RISK",
+      "expectedViolationTypes": [
+        "project_status_upgrade"
+      ],
+      "actualViolationTypes": [],
+      "missingTypes": [
+        "project_status_upgrade"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"project_status_upgrade\"], actual []"
+      ]
+    },
+    {
+      "testCaseId": "DEV-ADV-004",
+      "category": "adversarial",
+      "failureType": "NUMERIC_REASONING_ERROR",
+      "expectedViolationTypes": [
+        "numeric_metric_changed",
+        "unsupported_result"
+      ],
+      "actualViolationTypes": [
+        "unsupported_result"
+      ],
+      "missingTypes": [
+        "numeric_metric_changed"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"numeric_metric_changed\",\"unsupported_result\"], actual [\"unsupported_result\"]"
+      ]
+    },
+    {
+      "testCaseId": "DEV-ADV-005",
+      "category": "adversarial",
+      "failureType": "NUMERIC_REASONING_ERROR",
+      "expectedViolationTypes": [
+        "numeric_metric_changed",
+        "unsupported_result"
+      ],
+      "actualViolationTypes": [
+        "unsupported_result"
+      ],
+      "missingTypes": [
+        "numeric_metric_changed"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"numeric_metric_changed\",\"unsupported_result\"], actual [\"unsupported_result\"]"
+      ]
+    },
+    {
+      "testCaseId": "DEV-ADV-006",
+      "category": "adversarial",
+      "failureType": "MISSED_RISK",
+      "expectedViolationTypes": [
+        "unsupported_technology"
+      ],
+      "actualViolationTypes": [],
+      "missingTypes": [
+        "unsupported_technology"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"unsupported_technology\"], actual []"
+      ]
+    },
+    {
+      "testCaseId": "DEV-ADV-008",
+      "category": "adversarial",
+      "failureType": "RESPONSIBILITY_REASONING_ERROR",
+      "expectedViolationTypes": [
+        "project_status_upgrade",
+        "responsibility_upgrade"
+      ],
+      "actualViolationTypes": [
+        "project_status_upgrade"
+      ],
+      "missingTypes": [
+        "responsibility_upgrade"
+      ],
+      "extraTypes": [],
+      "failedChecks": [
+        "violationTypes: expected [\"project_status_upgrade\",\"responsibility_upgrade\"], actual [\"project_status_upgrade\"]"
+      ]
+    }
+  ],
+  "executionErrors": [],
+  "failedTestCaseIds": [
+    "DEV-CLN-004",
+    "DEV-SNG-001",
+    "DEV-SNG-002",
+    "DEV-SNG-004",
+    "DEV-SNG-005",
+    "DEV-SNG-007",
+    "DEV-SNG-008",
+    "DEV-SNG-009",
+    "DEV-SNG-010",
+    "DEV-SNG-016",
+    "DEV-MLT-002",
+    "DEV-MLT-003",
+    "DEV-MLT-005",
+    "DEV-MLT-008",
+    "DEV-BDR-001",
+    "DEV-BDR-012",
+    "DEV-BDR-014",
+    "DEV-BDR-015",
+    "DEV-BDR-016",
+    "DEV-ADV-001",
+    "DEV-ADV-002",
+    "DEV-ADV-003",
+    "DEV-ADV-004",
+    "DEV-ADV-005",
+    "DEV-ADV-006",
+    "DEV-ADV-008"
+  ],
+  "executionErrorTestCaseIds": [],
+  "schemaInvalidCount": 0,
+  "modelRetryCaseCount": 0,
+  "totalModelRetries": 0,
+  "latency": {
+    "overall": {
+      "count": 61,
+      "averageMs": 1095,
+      "p50Ms": 1107,
+      "p95Ms": 1536
+    },
+    "successfulCalls": {
+      "count": 61,
+      "averageMs": 1095,
+      "p50Ms": 1107,
+      "p95Ms": 1536
+    }
+  }
+}

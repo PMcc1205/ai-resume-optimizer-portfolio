@@ -1,0 +1,744 @@
+{
+  "evaluationId": "high-risk-v1",
+  "generatedAt": "2026-09-19T12:25:00.146Z",
+  "results": [
+    {
+      "testCaseId": "HR-DUTY-001",
+      "title": "参与需求分析不得升级为负责",
+      "riskTags": [
+        "改写_职责升级",
+        "校验_职责等级"
+      ],
+      "targetModule": "post-generation-validation",
+      "expected": {
+        "expectedValidationStatus": "校验不通过",
+        "requiredFactIds": [
+          "fact-001"
+        ],
+        "requiredClaims": [
+          "参与需求分析和产品方案讨论"
+        ],
+        "forbiddenClaims": [
+          "负责需求分析",
+          "主导需求分析",
+          "独立负责需求分析"
+        ],
+        "violationTypes": [
+          "职责升级"
+        ],
+        "acceptanceCriteria": [
+          "不得把“参与”提升为“负责”或更高职责等级",
+          "事实校验必须识别职责等级超过 Fact 支持上限"
+        ]
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "responsibility_upgrade"
+        ],
+        "claims": [
+          {
+            "claimText": "负责需求分析",
+            "claimType": "职责",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "事实仅支持“参与需求分析”，未支持“负责”，职责等级不匹配。"
+          },
+          {
+            "claimText": "输出整体产品方案",
+            "claimType": "职责",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "事实仅支持“参与产品方案讨论”，未支持“输出整体产品方案”，职责等级及内容不匹配。"
+          }
+        ],
+        "unsupportedClaims": [
+          "负责需求分析",
+          "输出整体产品方案"
+        ],
+        "usedFactIds": [
+          "fact-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "参与需求分析和产品方案讨论",
+          "参与需求分析和产品方案讨论"
+        ],
+        "reason": "职责等级超过 Fact 支持上限（允许 参与）；事实声明没有 supporting Fact；事实仅支持“参与需求分析”，未支持“负责”，职责等级不匹配。；事实仅支持“参与产品方案讨论”，未支持“输出整体产品方案”，职责等级及内容不匹配。",
+        "validationId": "validation-eval-HR-DUTY-001"
+      },
+      "passed": true,
+      "failedChecks": [],
+      "latencyMs": 1658,
+      "error": null
+    },
+    {
+      "testCaseId": "HR-DUTY-002",
+      "title": "负责模块不得升级为主导项目",
+      "riskTags": [
+        "改写_职责升级",
+        "改写_职责范围扩大"
+      ],
+      "targetModule": "post-generation-validation",
+      "expected": {
+        "expectedValidationStatus": "校验不通过",
+        "requiredFactIds": [
+          "fact-001"
+        ],
+        "requiredClaims": [
+          "负责搜索模块的交互方案设计"
+        ],
+        "forbiddenClaims": [
+          "主导搜索产品",
+          "项目负责人",
+          "主导项目推进"
+        ],
+        "violationTypes": [
+          "职责升级",
+          "职责范围扩大"
+        ],
+        "acceptanceCriteria": [
+          "不得把“负责模块”提升为“主导项目”",
+          "不得把局部模块职责扩大为整体产品职责"
+        ]
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "responsibility_upgrade",
+          "responsibility_scope_expanded"
+        ],
+        "claims": [
+          {
+            "claimText": "主导搜索产品整体规划与项目推进",
+            "claimType": "职责",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "唯一可用事实是 fact-001，其内容为负责搜索模块的交互方案设计，仅支持交互方案设计职责，未涉及主导角色、搜索产品整体规划或项目推进，职责等级与范围均无事实支持。"
+          }
+        ],
+        "unsupportedClaims": [
+          "主导搜索产品整体规划与项目推进"
+        ],
+        "usedFactIds": [
+          "fact-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "负责搜索模块的交互方案设计",
+          "负责搜索模块的交互方案设计"
+        ],
+        "reason": "职责等级超过 Fact 支持上限（允许 负责）；事实声明没有 supporting Fact；唯一可用事实是 fact-001，其内容为负责搜索模块的交互方案设计，仅支持交互方案设计职责，未涉及主导角色、搜索产品整体规划或项目推进，职责等级与范围均无事实支持。",
+        "validationId": "validation-eval-HR-DUTY-002"
+      },
+      "passed": true,
+      "failedChecks": [],
+      "latencyMs": 1298,
+      "error": null
+    },
+    {
+      "testCaseId": "HR-STAGE-001",
+      "title": "Demo 不得写成正式上线",
+      "riskTags": [
+        "改写_项目状态升级",
+        "校验_项目阶段"
+      ],
+      "targetModule": "post-generation-validation",
+      "expected": {
+        "expectedValidationStatus": "校验不通过",
+        "requiredFactIds": [
+          "fact-001"
+        ],
+        "requiredClaims": [
+          "完成知识问答 Demo"
+        ],
+        "forbiddenClaims": [
+          "正式上线",
+          "生产环境",
+          "商业上线"
+        ],
+        "violationTypes": [
+          "项目状态升级"
+        ],
+        "acceptanceCriteria": [
+          "项目状态必须保持为 Demo 或更弱表达",
+          "不得出现正式上线、生产环境或商业上线"
+        ]
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "project_status_upgrade"
+        ],
+        "claims": [
+          {
+            "claimText": "推动知识问答产品正式上线",
+            "claimType": "项目状态",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "事实仅支持完成演示版本，不支持正式上线，项目阶段被升级。"
+          },
+          {
+            "claimText": "验证核心流程",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "fact-001"
+            ],
+            "reason": "事实中有‘验证核心流程’，与声明一致。"
+          }
+        ],
+        "unsupportedClaims": [
+          "推动知识问答产品正式上线"
+        ],
+        "usedFactIds": [
+          "fact-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "完成知识问答演示版本并验证核心流程",
+          "完成知识问答 Demo，验证核心问答流程"
+        ],
+        "reason": "项目状态超过 Fact 支持上限；事实声明没有 supporting Fact；事实仅支持完成演示版本，不支持正式上线，项目阶段被升级。",
+        "validationId": "validation-eval-HR-STAGE-001"
+      },
+      "passed": true,
+      "failedChecks": [],
+      "latencyMs": 1156,
+      "error": null
+    },
+    {
+      "testCaseId": "HR-STAGE-002",
+      "title": "MVP 不得写成正式上线",
+      "riskTags": [
+        "改写_项目状态升级",
+        "校验_项目阶段"
+      ],
+      "targetModule": "post-generation-validation",
+      "expected": {
+        "expectedValidationStatus": "校验不通过",
+        "requiredFactIds": [
+          "fact-001"
+        ],
+        "requiredClaims": [
+          "完成 MVP"
+        ],
+        "forbiddenClaims": [
+          "正式上线",
+          "上线后迭代",
+          "生产环境"
+        ],
+        "violationTypes": [
+          "项目状态升级",
+          "无支撑行动"
+        ],
+        "acceptanceCriteria": [
+          "MVP 只能保持为最小可行产品阶段",
+          "不得从 MVP 推导正式上线或上线后迭代"
+        ]
+      },
+      "actual": null,
+      "passed": false,
+      "failedChecks": [],
+      "latencyMs": 3033,
+      "error": {
+        "code": "SCHEMA_INVALID",
+        "message": "事实校验字段缺失或包含额外字段。"
+      }
+    },
+    {
+      "testCaseId": "HR-NUM-001",
+      "title": "原文无数字不得新增提升百分比",
+      "riskTags": [
+        "改写_数字幻觉",
+        "改写_无依据结果"
+      ],
+      "targetModule": "post-generation-validation",
+      "expected": {
+        "expectedValidationStatus": "校验不通过",
+        "requiredFactIds": [
+          "fact-001"
+        ],
+        "requiredClaims": [
+          "开展用户访谈并整理体验问题"
+        ],
+        "forbiddenClaims": [
+          "提升 30%",
+          "满意度提升",
+          "增长 30%"
+        ],
+        "violationTypes": [
+          "新增数字",
+          "无支撑结果"
+        ],
+        "acceptanceCriteria": [
+          "原始 Fact 没有任何百分比时不得生成 30%",
+          "完成访谈不能自动推导满意度提升"
+        ]
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "unsupported_number",
+          "unsupported_result"
+        ],
+        "claims": [
+          {
+            "claimText": "开展用户访谈",
+            "claimType": "行动",
+            "supported": true,
+            "supportingFactIds": [
+              "fact-001"
+            ],
+            "reason": "fact-001 明确记录开展用户访谈，行动事实直接支持。"
+          },
+          {
+            "claimText": "推动用户满意度提升 30%",
+            "claimType": "数字",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "fact-001 仅记录开展用户访谈并整理体验问题，没有任何满意度指标或 30% 数字的事实支持，且由开展工作不能推导出满意度提升结果。"
+          }
+        ],
+        "unsupportedClaims": [
+          "推动用户满意度提升 30%"
+        ],
+        "usedFactIds": [
+          "fact-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "开展用户访谈并整理体验问题",
+          "开展用户访谈并整理体验问题"
+        ],
+        "reason": "数字或口径无法追溯：30%；结果性表达“提升”没有真实 Fact 支持；结果性表达“满意度”没有真实 Fact 支持；事实声明没有 supporting Fact；fact-001 仅记录开展用户访谈并整理体验问题，没有任何满意度指标或 30% 数字的事实支持，且由开展工作不能推导出满意度提升结果。",
+        "validationId": "validation-eval-HR-NUM-001"
+      },
+      "passed": true,
+      "failedChecks": [],
+      "latencyMs": 1224,
+      "error": null
+    },
+    {
+      "testCaseId": "HR-NUM-002",
+      "title": "已有用户数不得从 100 放大到 1000",
+      "riskTags": [
+        "改写_数字改变",
+        "校验_数值一致性"
+      ],
+      "targetModule": "post-generation-validation",
+      "expected": {
+        "expectedValidationStatus": "校验不通过",
+        "requiredFactIds": [
+          "fact-001"
+        ],
+        "requiredClaims": [
+          "100 名用户参与内测"
+        ],
+        "forbiddenClaims": [
+          "1000 名用户",
+          "千名用户"
+        ],
+        "violationTypes": [
+          "数字值改变"
+        ],
+        "acceptanceCriteria": [
+          "用户数必须保持为 100",
+          "不得放大为 1000 或其他未确认数值"
+        ]
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "numeric_value_changed"
+        ],
+        "claims": [
+          {
+            "claimText": "推动 1000 名用户参与产品内测",
+            "claimType": "数字",
+            "supported": false,
+            "supportingFactIds": [
+              "fact-001"
+            ],
+            "reason": "事实 fact-001 为“邀请 100 名用户参与内部测试”，数字口径为 100 名；重写文本为 1000 名，数字不一致，且“推动”较事实“邀请”有职责/行动程度差异。"
+          },
+          {
+            "claimText": "产品内测",
+            "claimType": "项目状态",
+            "supported": true,
+            "supportingFactIds": [
+              "fact-001"
+            ],
+            "reason": "事实 fact-001 的项目状态为“内部测试”，与“内测”一致。"
+          }
+        ],
+        "unsupportedClaims": [
+          "推动 1000 名用户参与产品内测"
+        ],
+        "usedFactIds": [
+          "fact-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "邀请 100 名用户参与内部测试",
+          "邀请 100 名用户参与内测"
+        ],
+        "reason": "数字或口径无法追溯：1000名；事实 fact-001 为“邀请 100 名用户参与内部测试”，数字口径为 100 名；重写文本为 1000 名，数字不一致，且“推动”较事实“邀请”有职责/行动程度差异。",
+        "validationId": "validation-eval-HR-NUM-002"
+      },
+      "passed": true,
+      "failedChecks": [],
+      "latencyMs": 2802,
+      "error": null
+    },
+    {
+      "testCaseId": "HR-NUM-003",
+      "title": "相同数字不得改变访谈次数口径",
+      "riskTags": [
+        "改写_数字口径变化",
+        "校验_指标一致性"
+      ],
+      "targetModule": "post-generation-validation",
+      "expected": {
+        "expectedValidationStatus": "校验不通过",
+        "requiredFactIds": [
+          "fact-001"
+        ],
+        "requiredClaims": [
+          "5 次用户访谈"
+        ],
+        "forbiddenClaims": [
+          "5 名用户",
+          "覆盖 5 位用户"
+        ],
+        "violationTypes": [
+          "数字口径改变",
+          "无支撑结果"
+        ],
+        "acceptanceCriteria": [
+          "数字 5 必须保持“访谈次数”口径，不能改为“用户人数”",
+          "不得从整理记录自动推导已形成用户洞察"
+        ]
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "numeric_metric_changed",
+          "unsupported_result"
+        ],
+        "claims": [
+          {
+            "claimText": "访谈 5 名用户",
+            "claimType": "数字",
+            "supported": false,
+            "supportingFactIds": [
+              "fact-001"
+            ],
+            "reason": "fact-001 明确记载完成 5 次用户访谈，数字与访谈对象数量一致。"
+          },
+          {
+            "claimText": "形成用户洞察",
+            "claimType": "结果",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "fact-001 仅记载完成访谈并整理记录，未提供形成用户洞察这一结果的事实支持。"
+          }
+        ],
+        "unsupportedClaims": [
+          "访谈 5 名用户",
+          "形成用户洞察"
+        ],
+        "usedFactIds": [
+          "fact-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "完成 5 次用户访谈并整理记录",
+          "完成 5 次用户访谈并整理记录"
+        ],
+        "reason": "数字或口径无法追溯：5名；supporting Fact 的内容无法支撑该声明；事实声明没有 supporting Fact；fact-001 仅记载完成访谈并整理记录，未提供形成用户洞察这一结果的事实支持。",
+        "validationId": "validation-eval-HR-NUM-003"
+      },
+      "passed": true,
+      "failedChecks": [],
+      "latencyMs": 2339,
+      "error": null
+    },
+    {
+      "testCaseId": "HR-CROSS-001",
+      "title": "项目 A 的转化结果不得写入项目 B",
+      "riskTags": [
+        "改写_跨项目",
+        "校验_事实边界"
+      ],
+      "targetModule": "post-generation-validation",
+      "expected": {
+        "expectedValidationStatus": "校验不通过",
+        "requiredFactIds": [
+          "fact-b-action"
+        ],
+        "forbiddenFactIds": [
+          "fact-a-result"
+        ],
+        "requiredClaims": [
+          "参与 RAG 知识问答 Demo 设计"
+        ],
+        "forbiddenClaims": [
+          "将转化率从 8% 提升至 12%"
+        ],
+        "violationTypes": [
+          "跨项目引用"
+        ],
+        "acceptanceCriteria": [
+          "项目 B 的 Rewrite 只能使用 exp-b 的 Fact",
+          "项目 A 的转化结果不得写入项目 B"
+        ]
+      },
+      "actual": null,
+      "passed": false,
+      "failedChecks": [],
+      "latencyMs": 3574,
+      "error": {
+        "code": "SCHEMA_INVALID",
+        "message": "事实校验字段缺失或包含额外字段。"
+      }
+    },
+    {
+      "testCaseId": "HR-TECH-001",
+      "title": "没有 Agent 实践不得生成 Agent 经历",
+      "riskTags": [
+        "改写_技术虚构",
+        "改写_经历虚构"
+      ],
+      "targetModule": "post-generation-validation",
+      "expected": {
+        "expectedValidationStatus": "校验不通过",
+        "requiredFactIds": [
+          "fact-001"
+        ],
+        "requiredClaims": [
+          "参与普通审批工作流的需求梳理"
+        ],
+        "forbiddenClaims": [
+          "Agent 多步推理",
+          "Agent 产品",
+          "Agent 实践"
+        ],
+        "violationTypes": [
+          "新增技术",
+          "虚构经历"
+        ],
+        "acceptanceCriteria": [
+          "普通审批工作流不得被解释为 Agent",
+          "不得生成输入中不存在的 Agent 技术或实践经历"
+        ]
+      },
+      "actual": {
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "unsupported_technology"
+        ],
+        "claims": [
+          {
+            "claimText": "参与 Agent 多步推理工作流设计",
+            "claimType": "职责",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "事实 fact-001 仅支持参与普通审批工作流的需求梳理，未提及 Agent 多步推理工作流设计，且无其他事实支持。"
+          },
+          {
+            "claimText": "完成 Agent 产品落地",
+            "claimType": "结果",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "事实 fact-001 仅支持需求梳理，未提及 Agent 产品落地，也无结果性事实支持，且不能由参与工作推导出落地结果。"
+          }
+        ],
+        "unsupportedClaims": [
+          "参与 Agent 多步推理工作流设计",
+          "完成 Agent 产品落地"
+        ],
+        "usedFactIds": [
+          "fact-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "参与普通审批工作流的需求梳理",
+          "参与普通审批工作流的需求梳理"
+        ],
+        "reason": "事实声明没有 supporting Fact；事实 fact-001 仅支持参与普通审批工作流的需求梳理，未提及 Agent 多步推理工作流设计，且无其他事实支持。；事实 fact-001 仅支持需求梳理，未提及 Agent 产品落地，也无结果性事实支持，且不能由参与工作推导出落地结果。",
+        "validationId": "validation-eval-HR-TECH-001"
+      },
+      "passed": true,
+      "failedChecks": [],
+      "latencyMs": 2344,
+      "error": null
+    },
+    {
+      "testCaseId": "HR-METHOD-001",
+      "title": "没有 A/B 测试不得生成实验经历",
+      "riskTags": [
+        "改写_方法虚构",
+        "改写_经历虚构"
+      ],
+      "targetModule": "post-generation-validation",
+      "expected": {
+        "expectedValidationStatus": "校验不通过",
+        "requiredFactIds": [
+          "fact-001"
+        ],
+        "requiredClaims": [
+          "收集用户反馈并比较方案"
+        ],
+        "forbiddenClaims": [
+          "A/B 测试",
+          "实验验证",
+          "设计实验"
+        ],
+        "violationTypes": [
+          "新增方法",
+          "虚构经历"
+        ],
+        "acceptanceCriteria": [
+          "普通方案比较不得映射为 A/B 测试",
+          "不得生成未发生的实验设计和执行经历"
+        ]
+      },
+      "actual": null,
+      "passed": false,
+      "failedChecks": [],
+      "latencyMs": 2990,
+      "error": {
+        "code": "SCHEMA_INVALID",
+        "message": "事实校验字段缺失或包含额外字段。"
+      }
+    },
+    {
+      "testCaseId": "HR-ABSENCE-001",
+      "title": "明确没有相关经历后禁止 Rewrite",
+      "riskTags": [
+        "缺口_能力缺失",
+        "改写_权限错误",
+        "改写_经历虚构"
+      ],
+      "targetModule": "rewrite",
+      "expected": {
+        "expectedMatchStatus": "未满足",
+        "expectedGapType": "能力缺口",
+        "expectedCapabilityGapSubtype": "能力缺失",
+        "expectedRewritePermission": "不可改写",
+        "expectedRewriteCallAllowed": false,
+        "forbiddenClaims": [
+          "负责 Agent 产品设计",
+          "推动 Agent 项目落地",
+          "具备 Agent 实践"
+        ],
+        "violationTypes": [
+          "错误改写权限",
+          "虚构经历"
+        ],
+        "acceptanceCriteria": [
+          "用户明确确认没有经历后必须保持能力缺失",
+          "系统不得调用 Rewrite 或生成匹配经历"
+        ]
+      },
+      "actual": {
+        "matchStatus": "未满足",
+        "gapType": "能力缺口",
+        "capabilityGapSubtype": "能力缺失",
+        "rewritePermission": "不可改写",
+        "rewriteCallAllowed": false,
+        "violationTypes": [
+          "rewrite_not_allowed"
+        ]
+      },
+      "passed": true,
+      "failedChecks": [],
+      "latencyMs": 1,
+      "error": null
+    },
+    {
+      "testCaseId": "HR-CAPABILITY-001",
+      "title": "能力程度不足不得包装成完全满足",
+      "riskTags": [
+        "匹配_等级不足",
+        "诊断_程度误判",
+        "改写_能力升级"
+      ],
+      "targetModule": "match-gap",
+      "expected": {
+        "expectedMatchStatus": "部分满足",
+        "expectedGapType": "能力缺口",
+        "expectedCapabilityGapSubtype": "能力程度不足",
+        "expectedRewritePermission": "有限改写",
+        "expectedValidationStatus": "校验不通过",
+        "requiredFactIds": [
+          "fact-001"
+        ],
+        "requiredClaims": [
+          "已有用户访谈和需求整理实践",
+          "当前证据只能证明参与访谈并负责需求整理"
+        ],
+        "forbiddenClaims": [
+          "完全满足岗位要求",
+          "独立主导完整流程",
+          "已达到 L4"
+        ],
+        "violationTypes": [
+          "能力程度包装",
+          "职责升级"
+        ],
+        "acceptanceCriteria": [
+          "Match Status 必须保持部分满足",
+          "Gap 必须保持能力程度不足",
+          "有限改写不得把现有实践包装为 L4 或完全满足"
+        ]
+      },
+      "actual": {
+        "matchStatus": "部分满足",
+        "gapType": "能力缺口",
+        "capabilityGapSubtype": "能力程度不足",
+        "rewritePermission": "有限改写",
+        "validationStatus": "校验不通过",
+        "violationTypes": [
+          "responsibility_upgrade",
+          "capability_overstatement"
+        ],
+        "claims": [
+          {
+            "claimText": "独立主导从用户洞察到产品方案落地的完整流程",
+            "claimType": "职责",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "事实仅显示为参与用户访谈并整理需求清单，未支持独立主导完整产品流程的职责等级。"
+          },
+          {
+            "claimText": "完全满足岗位要求",
+            "claimType": "其他",
+            "supported": false,
+            "supportingFactIds": [],
+            "reason": "岗位匹配结论不属于事实性声明，且无usedFactIds支持完全满足要求。"
+          }
+        ],
+        "unsupportedClaims": [
+          "独立主导从用户洞察到产品方案落地的完整流程",
+          "完全满足岗位要求"
+        ],
+        "usedFactIds": [
+          "fact-001"
+        ],
+        "invalidFactIds": [],
+        "evidenceClaims": [
+          "参与用户访谈并负责整理需求清单",
+          "参与用户访谈，负责整理需求清单"
+        ],
+        "reason": "职责等级超过 Fact 支持上限（允许 负责）；事实声明没有 supporting Fact；事实仅显示为参与用户访谈并整理需求清单，未支持独立主导完整产品流程的职责等级。；岗位匹配结论不属于事实性声明，且无usedFactIds支持完全满足要求。",
+        "validationId": "validation-eval-HR-CAPABILITY-001"
+      },
+      "passed": true,
+      "failedChecks": [],
+      "latencyMs": 1413,
+      "error": null
+    }
+  ]
+}
